@@ -1,0 +1,10 @@
+[user]
+	email = krzysztof.modras@gmail.com
+	name = chrmod
+
+[push]
+	default = current
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
