@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/chrmod/Projects/rebased/finalcloud'
 let g:netrw_dirhist_2='/home/chrmod/Projects/warsawjs/marcin93'
 let g:netrw_dirhist_3='/home/chrmod/dotfiles'
+let g:netrw_dirhist_4='/home/chrmod/.vim'
+let g:netrw_dirhist_5='/home/chrmod/Projects/rebased/finalcloud/app/models/issue'

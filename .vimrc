@@ -20,6 +20,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'bling/vim-airline'
+
 " rails
 Plugin 'tpope/vim-rails'
 
@@ -112,8 +114,19 @@ let g:ctrlp_working_path_mode = 0
 ""
 "" Backup and swap files
 ""
-set backupdir=~/.vim/_backup// " where to put backup files.
-set directory=~/.vim/_temp// " where to put swap files.
+set backupdir=/tmp// " where to put backup files.
+set undodir=/tmp//
+set directory=/tmp// " where to put swap files.
 
 let mapleader=" "
 map <Leader><Space> :noh<CR>
+
+" turn off arrows
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
