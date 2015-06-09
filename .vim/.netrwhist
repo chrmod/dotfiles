@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/chrmod/Projects/rebased/finalcloud'
-let g:netrw_dirhist_2='/home/chrmod/Projects/warsawjs/marcin93'
-let g:netrw_dirhist_3='/home/chrmod/dotfiles'
-let g:netrw_dirhist_4='/home/chrmod/.vim'
-let g:netrw_dirhist_5='/home/chrmod/Projects/rebased/finalcloud/app/models/issue'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/chrmod/Projects/chrmod/blog/_posts'
+let g:netrw_dirhist_2='/home/chrmod/.tmux'
+let g:netrw_dirhist_3='/home/chrmod/Projects/opensource/ember-uploader/bower_components/sinon/test/sinon'
+let g:netrw_dirhist_4='/home/chrmod/Projects/rebased/finalcloud/app/models/project'
+let g:netrw_dirhist_5='/home/chrmod/Projects/rebased/finalcloud-dashboard/node_modules/ember-notify'
+let g:netrw_dirhist_6='/home/chrmod/tmp/x'

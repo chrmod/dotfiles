@@ -15,15 +15,27 @@ Plugin 'rking/ag.vim'
 " syntax
 Plugin 'darthdeus/vim-emblem'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'nono/vim-handlebars'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
 
 " git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
+" gui
 Plugin 'bling/vim-airline'
 
 " rails
 Plugin 'tpope/vim-rails'
+
+" comments
+Plugin 'scrooloose/nerdcommenter'
+
+" helpers
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -72,7 +84,7 @@ set wildmenu " enable bash style tab completion
 set wildmode=list:longest,full
 
 " put git status, column/row number, total lines, and percentage in status
-set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
+"set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l]\ [%L,%p%%]
 
 if version >= 700
   au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
@@ -88,8 +100,8 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" set leader key to comma
-"let mapleader = " "
+" remove trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
 
 " hint to keep lines short
 if exists('+colorcolumn')
@@ -119,7 +131,6 @@ set undodir=/tmp//
 set directory=/tmp// " where to put swap files.
 
 let mapleader=" "
-map <Leader><Space> :noh<CR>
 
 " turn off arrows
 map <up> <nop>
@@ -130,3 +141,12 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" auto save
+autocmd FocusLost * :silent! wall
+autocmd FocusLost * call feedkeys("\<C-\>\<C-n>")
+
+
+" shortcuts
+map <Leader><Space> :noh<CR>
+map <Leader><Tab> <C-^>
