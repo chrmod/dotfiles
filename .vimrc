@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " navigation & search
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 
 " syntax
@@ -20,6 +20,7 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'editorconfig/editorconfig-vim'
 
 " git
 Plugin 'tpope/vim-fugitive'
@@ -30,6 +31,9 @@ Plugin 'bling/vim-airline'
 
 " rails
 Plugin 'tpope/vim-rails'
+
+" JS
+Plugin 'Shutnik/jshint2.vim'
 
 " comments
 Plugin 'scrooloose/nerdcommenter'
@@ -77,7 +81,8 @@ set vb " enable visual bell (disable audio bell)
 set ruler " show row and column in footer
 set scrolloff=2 " minimum lines above/below cursor
 set laststatus=2 " always show status bar
-set list listchars=tab:»·,trail:· " show extra space characters
+"set list
+"set listchars=extends:»,nbsp:_,precedes:«,tab:▸\ ,trail:·
 set nofoldenable " disable code folding
 set clipboard=unnamedplus " use the system clipboard
 set wildmenu " enable bash style tab completion
@@ -119,8 +124,9 @@ let g:gitgutter_eager = 750
 " ctrlp
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_use_caching = 0
+let g:ctrlp_working_path_mode = 'ra'
 "let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_user_command      = 'ag %s --files-with-matches --ignore vendor --ignore bower_components --ignore dist --ignore node_modules --ignore tmp --nocolor -g ""'
+let g:ctrlp_user_command      = 'ag %s -l --nocolor --files-with-matches -g ""'
 let g:ctrlp_working_path_mode = 0
 
 ""
@@ -150,3 +156,5 @@ autocmd FocusLost * call feedkeys("\<C-\>\<C-n>")
 " shortcuts
 map <Leader><Space> :noh<CR>
 map <Leader><Tab> <C-^>
+
+autocmd BufNewFile,BufRead *.jsm set syntax=javascript

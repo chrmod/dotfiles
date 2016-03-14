@@ -4,3 +4,5 @@
 # GIT
 alias gst="git status --branch --short"
 alias tmux="TERM=xterm-256color tmux"
+
+source /home/chrmod/.cliqz/.bash_aliases
