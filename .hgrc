@@ -1,0 +1,32 @@
+[extensions]
+progress =
+color =
+strip =
+rebase =
+histedit =
+purge =
+reviewboard = /home/chrmod/.mozbuild/version-control-tools/hgext/reviewboard/client.py
+bzexport = /home/chrmod/.mozbuild/version-control-tools/hgext/bzexport
+bzpost = /home/chrmod/.mozbuild/version-control-tools/hgext/bzpost
+firefoxtree = /home/chrmod/.mozbuild/version-control-tools/hgext/firefoxtree
+bundleclone = /home/chrmod/.mozbuild/version-control-tools/hgext/bundleclone
+mq =
+push-to-try = /home/chrmod/.mozbuild/version-control-tools/hgext/push-to-try
+mqext = /home/chrmod/.mozbuild/version-control-tools/hgext/mqext
+qimportbz = /home/chrmod/.mozbuild/version-control-tools/hgext/qimportbz
+[ui]
+username = Krzysztof Jan Modras <krzysztof.modras@gmail.com>
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+[bugzilla]
+username = krzysztof.modras@gmail.com
+[hostfingerprints]
+bugzilla.mozilla.org = f9:7e:62:42:4e:38:79:96:ca:87:71:2a:f8:51:38:c8:16:92:5c:a7
+bitbucket.org = 46:de:34:e7:9b:18:cd:7f:ae:fd:8b:e3:bc:f4:1a:5e:38:d7:ac:24
+hg.mozilla.org = af:27:b9:34:47:4e:e5:98:01:f6:83:2b:51:c9:aa:d8:df:fb:1a:27
+[mqext]
+mqcommit = auto
+[defaults]
+qnew = -U
