@@ -187,6 +187,7 @@ exec xrandr --output eDP1 --mode 1920x1080
 
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Tap Time" 0
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -107, -107
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Two-Finger Scrolling" 1 1
 
 exec --no-startup-id redshift || redshift -l 47.22:8.33
 exec compton -r
