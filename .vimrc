@@ -122,11 +122,11 @@ let g:gitgutter_realtime = 750
 let g:gitgutter_eager = 750
 
 " ctrlp
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_use_caching = 0
-let g:ctrlp_working_path_mode = 'ra'
-"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_user_command      = 'ag %s -l --nocolor --files-with-matches -g ""'
+let g:ctrlp_extensions        = ['tag']
+let g:ctrlp_match_window      = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer     = 0
+let g:ctrlp_use_caching       = 0
+let g:ctrlp_user_command      = 'ag %s --files-with-matches --ignore tags --ignore tmp --nocolor -g ""'
 let g:ctrlp_working_path_mode = 0
 
 ""
