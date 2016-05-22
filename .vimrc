@@ -1,7 +1,5 @@
 set nocompatible
 
-execute pathogen#infect()
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -29,9 +27,6 @@ Plugin 'airblade/vim-gitgutter'
 " gui
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
-" rails
-Plugin 'tpope/vim-rails'
 
 " JS
 Plugin 'Shutnik/jshint2.vim'
