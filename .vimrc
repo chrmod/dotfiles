@@ -27,7 +27,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " gui
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " rails
 Plugin 'tpope/vim-rails'
@@ -55,12 +56,12 @@ filetype plugin on
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+"
 " THEME
 syntax enable
 set background=dark
 set t_Co=256
-colorscheme jellybeans
+colorscheme desertink
 
 set autoindent " set auto indent
 set ts=2 " set indent to 2 spaces
@@ -69,6 +70,7 @@ set expandtab " use spaces, not tab characters
 set nocompatible " don't need to be compatible with old vim
 " set relativenumber " show relative line numbers
 set number
+set relativenumber
 set showmatch " show bracket matches
 set ignorecase " ignore case in search
 set hlsearch " highlight all search matches
