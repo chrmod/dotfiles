@@ -1,7 +1,5 @@
 set nocompatible
 
-execute pathogen#infect()
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -27,10 +25,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " gui
-Plugin 'bling/vim-airline'
-
-" rails
-Plugin 'tpope/vim-rails'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " JS
 Plugin 'Shutnik/jshint2.vim'
@@ -56,12 +52,12 @@ filetype plugin on
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+"
 " THEME
 syntax enable
 set background=dark
 set t_Co=256
-colorscheme jellybeans
+colorscheme desertink
 
 set autoindent " set auto indent
 set ts=2 " set indent to 2 spaces
@@ -70,6 +66,7 @@ set expandtab " use spaces, not tab characters
 set nocompatible " don't need to be compatible with old vim
 " set relativenumber " show relative line numbers
 set number
+set relativenumber
 set showmatch " show bracket matches
 set ignorecase " ignore case in search
 set hlsearch " highlight all search matches
@@ -123,11 +120,11 @@ let g:gitgutter_realtime = 750
 let g:gitgutter_eager = 750
 
 " ctrlp
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_use_caching = 0
-let g:ctrlp_working_path_mode = 'ra'
-"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_user_command      = 'ag %s -l --nocolor --files-with-matches -g ""'
+let g:ctrlp_extensions        = ['tag']
+let g:ctrlp_match_window      = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer     = 0
+let g:ctrlp_use_caching       = 0
+let g:ctrlp_user_command      = 'ag %s --files-with-matches --ignore tags --ignore tmp --nocolor -g ""'
 let g:ctrlp_working_path_mode = 0
 
 ""

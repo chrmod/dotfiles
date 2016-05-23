@@ -2,3 +2,4 @@
 *.swo
 *~
 .vim/bundle
+.netrwhist

@@ -1,0 +1,9 @@
+keycode 111 = Up Prior Up
+keycode 116 = Down Next Down
+keycode 113 = Left NoSymbol Left
+keycode 114 = Right NoSymbol Right
+
+! replace capslock with ctrl
+clear lock
+keycode 0xffe5 = Control_R
+add Control = Control_R
