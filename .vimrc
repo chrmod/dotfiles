@@ -19,6 +19,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'vim-scripts/groovy.vim'
 
 " git
 Plugin 'tpope/vim-fugitive'
@@ -57,7 +58,7 @@ filetype plugin on
 syntax enable
 set background=dark
 set t_Co=256
-colorscheme desertink
+colorscheme gruvbox
 
 set autoindent " set auto indent
 set ts=2 " set indent to 2 spaces
@@ -156,3 +157,6 @@ map <Leader><Space> :noh<CR>
 map <Leader><Tab> <C-^>
 
 autocmd BufNewFile,BufRead *.jsm set syntax=javascript
+
+" Jenkinsfile support
+au BufReadPost Jenkinsfile set syntax=groovy
