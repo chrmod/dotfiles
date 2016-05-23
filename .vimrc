@@ -40,6 +40,7 @@ Plugin 'scrooloose/nerdcommenter'
 
 " helpers
 Plugin 'tpope/vim-surround'
+Plugin 'terryma/vim-multiple-cursors' " Multi cursors
 
 call vundle#end()            " required
 filetype plugin indent on    " required
