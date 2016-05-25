@@ -1,2 +1,2 @@
- xrandr --dpi 220
+ xrandr --output eDP1 --mode 1920x1080
  i3-msg -t command restart
