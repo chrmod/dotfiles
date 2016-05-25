@@ -3,40 +3,6 @@ Xcursor.theme: DMZ-White
 URxvt.font:                xft:monospace:size=14
 URxvt.letterSpace:         -1
 
-URxvt.color24:  #076678
-URxvt.color66:  #427b58
-URxvt.color88:  #9d0006
-URxvt.color96:  #8f3f71
-URxvt.color100: #79740e
-URxvt.color108: #8ec07c
-URxvt.color109: #83a598
-URxvt.color130: #af3a03
-URxvt.color136: #b57614
-URxvt.color142: #b8bb26
-URxvt.color167: #fb4934
-URxvt.color175: #d3869b
-URxvt.color208: #fe8019
-URxvt.color214: #fabd2f
-URxvt.color223: #ebdbb2
-URxvt.color228: #f2e5bc
-URxvt.color229: #fbf1c7
-URxvt.color230: #f9f5d7
-URxvt.color234: #1d2021
-URxvt.color235: #282828
-URxvt.color236: #32302f
-URxvt.color237: #3c3836
-URxvt.color239: #504945
-URxvt.color241: #665c54
-URxvt.color243: #7c6f64
-URxvt.color244: #928374
-URxvt.color245: #928374
-URxvt.color246: #a89984
-URxvt.color248: #bdae93
-URxvt.color250: #d5c4a1
-URxvt*background:          #101218
-URxvt*foreground:          #E6EFF7
-URxvt*cursorColor:         #E6EFF7
-
 URxvt.internalBorder:      0
 URxvt.externalBorder:      0
 
@@ -61,3 +27,40 @@ URxvt.resize-font.bigger:  C-Up
 URxvt.url-launcher:        /usr/bin/firefox
 URxvt.keysym.M-Delete:     perl:matcher:list
 URxvt.colorUL:             #7780a1
+
+! Jellybeans Terminal Colours
+URxvt.foreground:   #e8e8d3
+URxvt.background:   #151515
+URxvt.cursorColor:  #e8e8d3
+
+! black
+URxvt.color0:       #3b3b3b
+URxvt.color8:       #6c6c6c
+
+! red
+URxvt.color1:       #cf6a4c
+URxvt.color9:       #db8f78
+
+! green
+URxvt.color2:       #99ad6a
+URxvt.color10:      #b2c18f
+
+! yellow
+URxvt.color3:       #d8ad4c
+URxvt.color11:      #e1c178
+
+! blue
+URxvt.color4:       #597bc5
+URxvt.color12:      #829cd3
+
+! magenta
+URxvt.color5:       #a037b0
+URxvt.color13:      #b769c3
+
+! cyan
+URxvt.color6:       #71b9f8
+URxvt.color14:      #94caf9
+
+! white
+URxvt.color7:       #adadad
+URxvt.color15:      #c1c1c1

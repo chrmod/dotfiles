@@ -31,7 +31,7 @@ BBLE="\[\033[44m\]" # background blue
 BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
-PS1="$HC$BBLE$FWHT[ ${debian_chroot:+($debian_chroot)}\u@\h ]$BBLK $FBLE\w $FMAG\$git_branch$FRED\$git_dirty $RS\$ "
+PS1="$HC$BBLE$FWHT[ ${debian_chroot:+($debian_chroot)}\u@\h ]$RS $FBLE\w $FMAG\$git_branch$FRED\$git_dirty $RS\$ "
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
@@ -53,7 +53,8 @@ complete -o default -F _pip_completion pip
 # pip bash completion end
 
 export WORKON_HOME=/home/chrmod/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+
+[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=/home/chrmod/.virtualenvs
 
 ### Added by the Heroku Toolbelt

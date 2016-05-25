@@ -1,8 +1,4 @@
-# TODO
-# alias t="todo.sh"
-
-# GIT
 alias gst="git status --branch --short"
 alias tmux="TERM=xterm-256color tmux"
 
-source /home/chrmod/.cliqz/.bash_aliases
+[[ -f /home/chrmod/.cliqz/.bash_aliases ]] && source /home/chrmod/.cliqz/.bash_aliases

@@ -56,9 +56,8 @@ filetype plugin on
 "
 " THEME
 syntax enable
-set background=dark
 set t_Co=256
-colorscheme gruvbox
+colorscheme jellybeans
 
 set autoindent " set auto indent
 set ts=2 " set indent to 2 spaces
