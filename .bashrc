@@ -62,3 +62,6 @@ export PATH="/usr/local/heroku/bin:~/.local/bin:~/bin:$PATH"
 
 #turn off capslock
 setxkbmap -option ctrl:nocaps
+
+
+[[ -f ~/bin/gruvbox.sh ]] && source ~/bin/gruvbox.sh
