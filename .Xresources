@@ -26,6 +26,7 @@ URxvt.url-launcher:        /usr/bin/firefox
 URxvt.keysym.M-Delete:     perl:matcher:list
 URxvt.colorUL:             #7780a1
 
+! not mix bright with bold
 URxvt.intensityStyles: false
 
 ! hard contrast: *background: #1d2021
@@ -57,6 +58,7 @@ URxvt.color14: #8ec07c
 URxvt.color7:  #a89984
 URxvt.color15: #ebdbb2
 
+! additional/256 colors
 URxvt.color24:  #076678
 URxvt.color66:  #427b58
 URxvt.color88:  #9d0006
