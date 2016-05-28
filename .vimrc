@@ -25,10 +25,6 @@ Plugin 'vim-scripts/groovy.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
-" gui
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
 " JS
 Plugin 'Shutnik/jshint2.vim'
 
@@ -44,16 +40,7 @@ filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
 filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-"
+
 " THEME
 syntax enable
 set t_Co=256
@@ -78,22 +65,12 @@ set ttimeoutlen=100 " decrease timeout for faster insert with 'O'
 set vb " enable visual bell (disable audio bell)
 set ruler " show row and column in footer
 set scrolloff=2 " minimum lines above/below cursor
-set laststatus=2 " always show status bar
 "set list
 "set listchars=extends:»,nbsp:_,precedes:«,tab:▸\ ,trail:·
 set nofoldenable " disable code folding
 set clipboard=unnamedplus " use the system clipboard
 set wildmenu " enable bash style tab completion
 set wildmode=list:longest,full
-
-" put git status, column/row number, total lines, and percentage in status
-"set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l]\ [%L,%p%%]
-
-if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
-endif
-
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
@@ -149,7 +126,6 @@ imap <right> <nop>
 " auto save
 autocmd FocusLost * :silent! wall
 autocmd FocusLost * call feedkeys("\<C-\>\<C-n>")
-
 
 " shortcuts
 map <Leader><Space> :noh<CR>

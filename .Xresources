@@ -1,4 +1,4 @@
-URxvt.font:                xft:monospace:size=14
+URxvt.font:                xft:Source Code Pro:size=14
 URxvt.letterSpace:         -1
 
 URxvt.internalBorder:      0
@@ -6,7 +6,7 @@ URxvt.externalBorder:      0
 
 URxvt.scrollBar:           false
 
-URxvt*fading:              30
+!URxvt*fading:              30
 
 URxvt.perl-ext-common:     default,matcher,resize-font,fullscreen
 
@@ -62,3 +62,5 @@ URxvt.color14:      #94caf9
 ! white
 URxvt.color7:       #adadad
 URxvt.color15:      #c1c1c1
+
+URxvt.intensityStyles: false
