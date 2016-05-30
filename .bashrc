@@ -5,7 +5,7 @@ function find_git_branch {
 }
 
 function find_git_dirty {
-  git_dirty=$([[ `gst 2>/dev/null | wc -l` -gt '1' ]] && echo '*')
+  git_dirty=$([[ `gst 2>/dev/null | wc -l` -gt '1' ]] && echo '* ')
 }
 
 PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
@@ -31,7 +31,8 @@ BBLE="\[\033[44m\]" # background blue
 BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
-PS1="$HC$BBLE$FWHT[ ${debian_chroot:+($debian_chroot)}\u@\h ]$RS $FBLE\w $FMAG\$git_branch$FRED\$git_dirty $RS\$ "
+#PS1="$HC$BBLE$FWHT[ ${debian_chroot:+($debian_chroot)}\u@\h ]$RS $FBLE\w $FMAG\$git_branch$FRED\$git_dirty $RS\$ "
+PS1="/ ${debian_chroot:+($debian_chroot)}\u@\h:\w \n\\ \$git_branch$FRED\$git_dirty$RS\$ "
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
