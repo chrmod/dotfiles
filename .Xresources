@@ -1,4 +1,6 @@
-URxvt.font:                xft:Source Code Pro:size=14
+URxvt.font:                xft:Source Code Pro:size=14;hinting=True;antialias:True
+URxvt.boldFont:            xft:Source Code Pro:size=14;bold;hinting=True;antialias:True
+
 URxvt.letterSpace:         -1
 
 URxvt.internalBorder:      0
