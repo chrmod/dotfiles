@@ -32,8 +32,12 @@ BBLE="\[\033[44m\]" # background blue
 BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
-#PS1="$HC$BBLE$FWHT[ ${debian_chroot:+($debian_chroot)}\u@\h ]$RS $FBLE\w $FMAG\$git_branch$FRED\$git_dirty $RS\$ "
-PS1="/ ${debian_chroot:+($debian_chroot)}\u@\h:$bold$FBLE\w $RS\n\\ \$git_branch$FRED\$git_dirty$RS\$ "
+FG="\[\033[15m\]"
+BG1="\[\033[48;5;237m\]"
+BYEL2="\[\033[48;5;214m\]"
+FBG="\[\033[38;5;235m\]"
+
+PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w $RS\$git_branch$FRED\$git_dirty$RS\$ "
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
