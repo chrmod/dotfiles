@@ -24,11 +24,11 @@ else:
 
 def color(percent):
     if percent < 10:
-        return "#FF0000"
+        return "#ebdbb2"
     if percent < 20:
-        return "#FF3300"
+        return "#fb4934"
     if percent < 30:
-        return "#FF6600"
+        return "#cc241d"
     if percent < 40:
         return "#FF9900"
     if percent < 50:
@@ -41,8 +41,19 @@ def color(percent):
         return "#FFFF66"
     return "#FFFFFF"
 
-form =  ' <span color="{}">{}%</span>'
-fulltext += form.format(color(percentleft), percentleft)
+def bgcolor(percent):
+    if percent < 10:
+        return 'background="#cc241d"'
+    return ""
+
+def show_percent(percent):
+    text = "{}%".format(percent)
+    if percent < 10:
+        return " "+text+" "
+    return text
+
+form =  ' <span color="{}" {}>{}</span>'
+fulltext += form.format(color(percentleft), bgcolor(percentleft), show_percent(percentleft))
 fulltext += timeleft
 
 print(fulltext)
