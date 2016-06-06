@@ -1,0 +1,20 @@
+source ~/.mutt/passwords
+
+set crypt_autosign
+set editor = vim
+set folder = imaps://imap.mailbox.org/
+set from = chrmod@chrmod.net
+set header_cache = ~/.cache/mutt/headers
+set imap_keepalive = 300
+set imap_user = chrmod@chrmod.net
+set mail_check = 120
+set message_cachedir = ~/.cache/mutt/messages
+set postponed = +Drafts
+set realname = 'Krzysztof Jan Modras'
+set record = +Sent
+set smtp_pass = $imap_pass
+set smtp_url = smtps://$imap_user@smtp.mailbox.org:465/
+set spoolfile = +INBOX
+set ssl_force_tls = yes
+set ssl_starttls = yes
+set use_from = yes

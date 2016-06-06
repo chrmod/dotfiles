@@ -14,7 +14,7 @@ PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 RS="\[\033[0m\]"    # reset
 HC="\[\033[1m\]"    # hicolor
 UL="\[\033[4m\]"    # underline
-bold=$(tput bold)
+#bold=$(tput bold)
 INV="\[\033[7m\]"   # inverse background and foreground
 FBLK="\[\033[30m\]" # foreground black
 FRED="\[\033[31m\]" # foreground red
@@ -37,7 +37,7 @@ BG1="\[\033[48;5;237m\]"
 BYEL2="\[\033[48;5;214m\]"
 FBG="\[\033[38;5;235m\]"
 
-PS1="$BYEL2$FBG$HC\[${debian_chroot:+($debian_chroot)}\u@\h\]$RS $bold$FBLE\w $RS\$git_branch$FRED\$git_dirty$RS\$ "
+PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w $RS\$git_branch$FRED\$git_dirty$RS\$ "
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
