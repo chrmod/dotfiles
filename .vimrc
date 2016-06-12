@@ -47,6 +47,7 @@ set t_Co=256
 set background=dark
 colorscheme gruvbox
 
+set laststatus=2
 set autoindent " set auto indent
 set ts=2 " set indent to 2 spaces
 set shiftwidth=2
@@ -136,3 +137,4 @@ autocmd BufNewFile,BufRead *.jsm set syntax=javascript
 
 " Jenkinsfile support
 au BufReadPost Jenkinsfile set syntax=groovy
+
