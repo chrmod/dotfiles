@@ -1,5 +1,6 @@
 source ~/.mutt/passwords
 
+set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set editor = vim
 set folder = imaps://imap.mailbox.org/
