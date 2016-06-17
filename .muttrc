@@ -1,5 +1,7 @@
 source ~/.mutt/passwords
 
+macro index,pager b '<enter-command>toggle sidebar_visible<enter>'
+
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set editor = vim
