@@ -12,7 +12,6 @@ set header_cache = ~/.cache/mutt/headers
 set imap_keepalive = 300
 set mail_check = 120
 set message_cachedir = ~/.cache/mutt/messages
-set postponed = +Drafts
 set quit = ask-yes
 set realname = 'Krzysztof Jan Modras'
 set record = +Sent
@@ -25,4 +24,3 @@ set ssl_starttls = yes
 set use_from = yes
 
 unset sort_re
-
