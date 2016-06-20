@@ -1,45 +1,27 @@
 set nocompatible
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-
-" navigation & search
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
-
-" syntax
-Plugin 'darthdeus/vim-emblem'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'nono/vim-handlebars'
-Plugin 'ngmy/vim-rubocop'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'suan/vim-instant-markdown'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-scripts/groovy.vim'
-
-" git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-
-" JS
 Plugin 'Shutnik/jshint2.vim'
-
-" comments
 Plugin 'scrooloose/nerdcommenter'
-
-" helpers
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors' " Multi cursors
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" To ignore plugin indent changes, instead use:
-filetype plugin on
 
 " THEME
 syntax enable
@@ -48,28 +30,26 @@ set background=dark
 colorscheme gruvbox
 
 set autoindent " set auto indent
-set ts=2 " set indent to 2 spaces
-set shiftwidth=2
+set clipboard=unnamedplus " use the system clipboard
+set cursorline " highlight current line
 set expandtab " use spaces, not tab characters
+set hlsearch " highlight all search matches
+set ignorecase " ignore case in search
+set incsearch " show search results as I type
+set laststatus=2
+set mouse=a " enable mouse support
 set nocompatible " don't need to be compatible with old vim
-" set relativenumber " show relative line numbers
+set nofoldenable " disable code folding
 set number
 set relativenumber
-set showmatch " show bracket matches
-set ignorecase " ignore case in search
-set hlsearch " highlight all search matches
-set cursorline " highlight current line
-set smartcase " pay attention to case when caps are used
-set incsearch " show search results as I type
-set mouse=a " enable mouse support
-set ttimeoutlen=100 " decrease timeout for faster insert with 'O'
-set vb " enable visual bell (disable audio bell)
 set ruler " show row and column in footer
 set scrolloff=2 " minimum lines above/below cursor
-"set list
-"set listchars=extends:»,nbsp:_,precedes:«,tab:▸\ ,trail:·
-set nofoldenable " disable code folding
-set clipboard=unnamedplus " use the system clipboard
+set shiftwidth=2
+set showmatch " show bracket matches
+set smartcase " pay attention to case when caps are used
+set ts=2 " set indent to 2 spaces
+set ttimeoutlen=100 " decrease timeout for faster insert with 'O'
+set vb " enable visual bell (disable audio bell)
 set wildmenu " enable bash style tab completion
 set wildmode=list:longest,full
 
@@ -123,10 +103,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-
-" auto save
-autocmd FocusLost * :silent! wall
-autocmd FocusLost * call feedkeys("\<C-\>\<C-n>")
 
 " shortcuts
 map <Leader><Space> :noh<CR>

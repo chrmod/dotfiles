@@ -152,7 +152,7 @@ bar {
 }
 
 # Lock screen
-bindsym $mod+c exec i3lock --color "$bg-color"
+bindsym $mod+b exec i3lock --color "$bg-color"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume

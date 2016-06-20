@@ -1,0 +1,12 @@
+set folder = imaps://imap.mailbox.org/
+set from = chrmod@chrmod.net
+set imap_user = chrmod@chrmod.net
+set postponed = +Drafts
+set smtp_url = smtps://$imap_user@smtp.mailbox.org:465/
+unset trash
+set spoolfile = +INBOX
+
+# Connection options
+set ssl_force_tls = yes
+
+source ~/.mutt/chrmod@chrmod.net.pass
