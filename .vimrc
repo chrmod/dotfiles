@@ -94,16 +94,6 @@ set directory=/tmp// " where to put swap files.
 
 let mapleader=" "
 
-" turn off arrows
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 " shortcuts
 map <Leader><Space> :noh<CR>
 map <Leader><Tab> <C-^>
