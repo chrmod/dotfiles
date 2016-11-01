@@ -1,2 +1,13 @@
 #!/usr/bin/env bash
-xrandr --output eDP1 --mode 1920x1080 --primary --output DP2-2 --mode 1920x1080 --same-as eDP1
+
+PRIMARY=eDP-1
+SECONDARY=DP2-2
+RESOLUTION=1920x1080
+
+# First arguments is a name of secondary display
+if [ $1 ]; then
+  SECONDARY=$1
+fi
+
+xrandr --output $PRIMARY   --mode $RESOLUTION --primary \
+       --output $SECONDARY --mode $RESOLUTION --same-as $PRIMARY
