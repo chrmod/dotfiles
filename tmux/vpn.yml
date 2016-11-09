@@ -1,0 +1,5 @@
+session_name: vpn
+windows:
+  - window_name: primary
+    panes:
+      - sudo openvpn vpn/krzysztof-us-east.ovpn
