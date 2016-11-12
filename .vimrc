@@ -7,15 +7,11 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'rking/ag.vim'
-Plugin 'nono/vim-handlebars'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'vim-scripts/groovy.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Shutnik/jshint2.vim'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors' " Multi cursors
@@ -78,12 +74,16 @@ let g:gitgutter_realtime = 750
 let g:gitgutter_eager = 750
 
 " ctrlp
-let g:ctrlp_extensions        = ['tag']
-let g:ctrlp_match_window      = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer     = 0
-let g:ctrlp_use_caching       = 0
-let g:ctrlp_user_command      = 'ag %s --files-with-matches --ignore tags --ignore tmp --nocolor -g ""'
-let g:ctrlp_working_path_mode = 0
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 ""
 "" Backup and swap files
