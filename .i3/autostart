@@ -1,2 +1,3 @@
  xrandr --output eDP-1 --mode 1920x1080
+ syndaemon -i 0.3 -K -d
  i3-msg -t command restart
