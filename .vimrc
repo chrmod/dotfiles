@@ -14,6 +14,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'terryma/vim-multiple-cursors' " Multi cursors
 
 call vundle#end()            " required

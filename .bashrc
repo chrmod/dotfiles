@@ -78,3 +78,7 @@ setxkbmap -option ctrl:nocaps
 
 
 [[ -f ~/bin/gruvbox.sh ]] && source ~/bin/gruvbox.sh
+
+# Fix pinentry-ncurses
+GPG_TTY=$(tty)
+export GPG_TTY
