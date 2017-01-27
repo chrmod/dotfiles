@@ -1,3 +1,3 @@
 xset r off
-syndaemon -i 0.5 -t -K -R -d
 setxkbmap -option ctrl:nocaps
+synclient PalmDetect=1
