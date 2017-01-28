@@ -86,4 +86,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # .npmrc credentials
 # https://github.com/npm/npm/issues/8223#issuecomment-103748375
 export npm_config_userconfig=/home/chrmod/.npmcreds
-export npm_config_save_default="~"`
+export npm_config_save_default="~"
