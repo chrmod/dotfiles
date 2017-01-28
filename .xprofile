@@ -1,3 +1,4 @@
 xset r off
 setxkbmap -option ctrl:nocaps
 synclient PalmDetect=1
+compton --backend glx --vsync opengl -b
