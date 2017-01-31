@@ -29,7 +29,7 @@ bindsym $mod+n workspace next
 bindsym $mod+Return exec i3-sensible-terminal
 
 # start launcher
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 480 -opacity "85" -bw 0 -color-enabled -font "System San Francisco Display 18"
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 480 -bw 0 -color-enabled -font "System San Francisco Display 18"
 
 # change focus
 bindsym $mod+j focus left
