@@ -1,3 +1,5 @@
- xrandr --output eDP-1 --mode 1920x1080
- syndaemon -i 0.3 -K -d
- i3-msg -t command restart
+hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
+xset r off
+setxkbmap -option ctrl:nocaps
+compton --backend glx --vsync opengl -b
+synclient PalmDetect=1
