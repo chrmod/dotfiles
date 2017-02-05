@@ -200,7 +200,6 @@ exec --no-startup-id compton --backend glx --vsync opengl -b
 exec --no-startup-id hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
 
 exec --no-startup-id xset r off
-exec --no-startup-id setxkbmap -option ctrl:nocaps
 exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
-exec --no-startup-id setxkbmap -layout pl,en_US,de
-exec --no-startup-id synclient PalmDetect=1
+exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id libinput-gestures-setup autostart
