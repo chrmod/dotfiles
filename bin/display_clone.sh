@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-PRIMARY=eDP-1
-SECONDARY=DP-1
+PRIMARY=eDP1
+SECONDARY=DP1
 RESOLUTION=1920x1080
 
 # First arguments is a name of secondary display
