@@ -8,3 +8,6 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+
+[alias]
+  start = !echo "Fetch upstream/master" && git fetch upstream && git checkout upstream/master --quiet && git branch -d master && git checkout -b master
