@@ -3,12 +3,12 @@ start_directory: "~/Projects/cliqz/navigation-extension"
 windows:
   - window_name: fern serve
     panes:
-      - ./fern.js serve configs/browser.json --freshtab
+      - pane
   - window_name: ember serve
     start_directory: subprojects/fresh-tab-frontend
     panes:
-      - ember serve -p 3000
+      - pane
   - window_name: vim
     focus: true
     panes:
-      - vim
+      - pane
