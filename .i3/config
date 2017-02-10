@@ -2,7 +2,6 @@
 set $mod Mod4
 set $workspace1 "1: Browsers"
 set $workspace2 "2: Terminals"
-set $workspace8 "8: Passwords"
 set $workspace9 "9: Communicators"
 set $workspace10 "10: Music"
 # colors
