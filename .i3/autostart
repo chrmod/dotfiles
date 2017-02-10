@@ -1,5 +1,0 @@
-hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
-xset r off
-setxkbmap -option ctrl:nocaps
-compton --backend glx --vsync opengl -b
-synclient PalmDetect=1
