@@ -66,7 +66,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Lock screen
-bindsym $mod+b exec i3lock --color "$bg-color"
+bindsym $mod+b exec xscreensaver-command -lock
 # Resize
 bindsym $mod+r mode "resize"
 
@@ -208,3 +208,4 @@ exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id libinput-gestures-setup autostart
 exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
 exec --no-startup-id urxvtd -q -o -f
+exec --no-startup-id xscreensaver -nosplash
