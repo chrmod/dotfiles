@@ -13,3 +13,14 @@ keysym Control_L = Caps_Lock
 keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
+
+! multimedia keys
+! mute
+keycode 121 = F10 F10 F10 F10 XF86Switch_VT_10
+keycode 76 = XF86AudioMute F10 F10 XF86Switch_VT_10
+! volume down
+keycode 122 = F11 F11 F11 F11 XF86Switch_VT_11
+keycode 95 = XF86AudioLowerVolume F11 F11 XF86Switch_VT_11
+! volume up
+keycode 123 = F12 F12 F12 F12 XF86Switch_VT_12
+keycode 96 = XF86AudioRaiseVolume F12 F12 XF86Switch_VT_12
