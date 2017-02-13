@@ -24,3 +24,9 @@ keycode 95 = XF86AudioLowerVolume F11 F11 XF86Switch_VT_11
 ! volume up
 keycode 123 = F12 F12 F12 F12 XF86Switch_VT_12
 keycode 96 = XF86AudioRaiseVolume F12 F12 XF86Switch_VT_12
+! keyboard brightness down
+keycode 237 = F3 F3 F3 F3 XF86Switch_VT_3
+keycode 69 = XF86KbdBrightnessDown F3 F3 XF86Switch_VT_3
+! keyboard brightness up
+keycode 238 = F4 F4 F4 F4 XF86Switch_VT_4
+keycode 70 = XF86KbdBrightnessUp F4 F4 XF86Switch_VT_4
