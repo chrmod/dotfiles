@@ -1,11 +1,5 @@
 source /etc/skel/.bashrc
 
-# avoid duplicates..
-export HISTCONTROL=ignoredups:erasedups
-
-# append history entries..
-shopt -s histappend
-
 function find_git_branch {
   git_branch=$(git branch 2>/dev/null | grep ^* | cut -d' ' -f 2)
 }
@@ -14,8 +8,7 @@ function find_git_dirty {
   git_dirty=$([[ `gst 2>/dev/null | wc -l` -gt '1' ]] && echo '* ')
 }
 
-# After each command, save and reload history
-PROMPT_COMMAND="history -a; history -c; history -r; find_git_branch; find_git_dirty; $PROMPT_COMMAND"
+PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 
 # ANSI color codes
 RS="\[\033[0m\]"    # reset
