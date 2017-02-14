@@ -93,6 +93,10 @@ URxvt.color246: #a89984
 URxvt.color248: #bdae93
 URxvt.color250: #d5c4a1
 
+! urxvt transparancy
+URxvt.transparent: true
+URxvt.shading:20
+
 ! Rofi
 rofi.color-enabled: true
 rofi.color-window: #3c3836, #3c3836, #3c3836
