@@ -30,3 +30,9 @@ keycode 69 = XF86KbdBrightnessDown F3 F3 XF86Switch_VT_3
 ! keyboard brightness up
 keycode 238 = F4 F4 F4 F4 XF86Switch_VT_4
 keycode 70 = XF86KbdBrightnessUp F4 F4 XF86Switch_VT_4
+! brightness down
+keycode 232 = F5 F5 F5 F5 XF86Switch_VT_5
+keycode 71 = XF86MonBrightnessDown F3 F3 XF86Switch_VT_5
+! brightness up
+keycode 233 = F6 F6 F6 F6 XF86Switch_VT_6
+keycode 72 = XF86MonBrightnessUp F4 F4 XF86Switch_VT_6
