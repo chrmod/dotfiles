@@ -103,3 +103,6 @@ autocmd BufNewFile,BufRead *.jsm set syntax=javascript
 
 " Jenkinsfile support
 au BufReadPost Jenkinsfile set syntax=groovy
+
+" transparancy
+hi Normal ctermbg=none

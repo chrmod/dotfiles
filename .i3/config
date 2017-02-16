@@ -151,16 +151,17 @@ new_window pixel 0
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        i3bar_command i3bar -t
         position top
         status_command SCRIPT_DIR=$HOME/.i3/scripts i3blocks -c ~/.i3/i3blocks.conf
         separator_symbol " | "
         colors {
-            background $bg-color
+            background $bg-colorCC
             separator $text-color
             statusline $text-color
             #                  border             background         text
-            focused_workspace  $bg-color          $bg-color          $text-color
-            inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+            focused_workspace  $bg-colorCC          $bg-colorCC          $text-color
+            inactive_workspace $bg-colorCC $inactive-bg-colorCC $inactive-text-color
             urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
 }
@@ -211,3 +212,6 @@ exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id xscreensaver -nosplash
 exec --no-startup-id dropbox start
+
+gaps inner 5
+#gaps outer 5
