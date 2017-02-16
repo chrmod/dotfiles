@@ -99,7 +99,7 @@ URxvt.shading:20
 
 ! Rofi
 rofi.color-enabled: true
-rofi.color-window: #3c3836, #3c3836, #3c3836
-rofi.color-normal: #3c3836, #eee8d5, #3c3836, #fabd2f, #3c3836
-rofi.color-active: #3c3836, #268bd2, #3c3836, #268bd2, #fdf6e3
-rofi.color-urgent: #3c3836, #dc322f, #3c3836, #dc322f, #fdf6e3
+rofi.color-window: argb:cc3c3836, argb:cc3c3836, #3c3836
+rofi.color-normal: argb:cc3c3836, #eee8d5, argb:cc3c3836, argb:ccfabd2f, argb:cc3c3836
+rofi.color-active: argb:cc3c3836, #268bd2, argb:cc3c3836, #268bd2, argb:ccfdf6e3
+rofi.color-urgent: argb:cc3c3836, #dc322f, argb:cc3c3836, #dc322f, argb:ccfdf6e3
