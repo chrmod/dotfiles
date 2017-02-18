@@ -39,44 +39,17 @@ FBG="\[\033[38;5;235m\]"
 
 PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w $RS\$git_branch$FRED\$git_dirty$RS\$ "
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-
 # turn off CTRL+s
 stty stop undef
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM
-
-
-# pip bash completion start
-_pip_completion()
-{
-    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
-                   COMP_CWORD=$COMP_CWORD \
-                   PIP_AUTO_COMPLETE=1 $1 ) )
-}
-complete -o default -F _pip_completion pip
-# pip bash completion end
-
-export WORKON_HOME=/home/chrmod/.virtualenvs
-
-[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=/home/chrmod/.virtualenvs
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:~/.local/bin:~/bin:$PATH"
-
+source $HOME/.config/bash/node.sh
+source $HOME/.config/bash/python.sh
+source $HOME/.config/bash/rust.sh
+source $HOME/.config/bash/ruby.sh
+source $HOME/.config/bash/heroku.sh
 
 [[ -f ~/bin/gruvbox.sh ]] && source ~/bin/gruvbox.sh
 
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
 export GPG_TTY
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-
-# .npmrc credentials
-# https://github.com/npm/npm/issues/8223#issuecomment-103748375
-export npm_config_userconfig=/home/chrmod/.npmcreds
-export npm_config_save_default="~"
