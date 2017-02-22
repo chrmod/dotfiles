@@ -1,7 +1,7 @@
 
 [global]
     # font = xft:Ubuntu:bold:size=8
-    font = Dejavu Sans Mono 10
+    font = Source Code Pro 10
 
     # allow a small subset of html markup:
     # <b>bold</b>
@@ -22,7 +22,7 @@
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
     # format = "☼ %a ☼\n\n%s\n%b"
-    format = "<b> %a </b>\n\n%s\n%b"
+    format = "<b>%a</b>\n%s\n%b"
 
     # Sort messages by urgency
     sort = yes
@@ -62,11 +62,11 @@
     # right side of the screen.  Y is measured from the top and down respectevly.
     # The width can be negative. In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x4-20+20"
+    geometry = "0x4-10-10"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
-    transparency = 20
+    transparency = 0
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
@@ -99,7 +99,7 @@
 
     # Draw a line of 'separatpr_height' pixel height between two notifications.
     # Set to 0 to disable
-    separator_height = 2;
+    separator_height = 5;
 
     # padding between text and separator
     padding = 8
@@ -157,8 +157,8 @@
     timeout = 10
 
 [urgency_normal]
-    background = "#112240"
-    foreground = "#ffffff"
+    background = "#3C3836"
+    foreground = "#ebdbb2"
     timeout = 10
 
 [urgency_critical]
