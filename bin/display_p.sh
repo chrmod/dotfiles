@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-xrandr --output eDP1 --mode 1920x1080 --primary --output DP1 --off
+PRIMARY=eDP1
+SECONDARY=DP1
+xrandr --output $PRIMARY --mode 1920x1080 --primary --output $SECONDARY --off
