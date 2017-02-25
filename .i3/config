@@ -196,14 +196,9 @@ mode "resize" {
 # Start autocutsel to sync clipboards
 exec killall -q autocutsel; autocutsel -f && autocutsel -s PRIMARY -f
 
-# Network manager
 exec --no-startup-id nm-applet
-
 exec --no-startup-id compton --backend glx --vsync opengl -b
-
-# autostart script
 exec --no-startup-id hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
-
 exec --no-startup-id xset r off
 exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
 exec --no-startup-id start-pulseaudio-x11
@@ -214,4 +209,3 @@ exec --no-startup-id xscreensaver -nosplash
 exec --no-startup-id dropbox start
 
 gaps inner 5
-#gaps outer 5

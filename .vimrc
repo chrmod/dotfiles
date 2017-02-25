@@ -3,15 +3,8 @@ filetype off
 
 source $HOME/.config/vim/plugins.vimrc
 source $HOME/.config/vim/settings.vimrc
+source $HOME/.config/vim/theme.vimrc
 source $HOME/.config/vim/plugins-config.vimrc
-
-" THEME
-syntax enable
-set t_Co=256
-set background=dark
-colorscheme gruvbox
-" transparancy
-hi Normal ctermbg=none
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
@@ -23,10 +16,6 @@ autocmd BufWinLeave * call clearmatches()
 
 " remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
-
-" autoreload vimrc after cache
-autocmd! BufWritePost .vimrc source %
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 " filetypes
 autocmd BufNewFile,BufRead Jenkinsfile set syntax=groovy
