@@ -1,14 +1,5 @@
+# load system defaults
 source /etc/skel/.bashrc
-
-function find_git_branch {
-  git_branch=$(git branch 2>/dev/null | grep ^* | cut -d' ' -f 2)
-}
-
-function find_git_dirty {
-  git_dirty=$([[ `gst 2>/dev/null | wc -l` -gt '1' ]] && echo '* ')
-}
-
-PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 
 # ANSI color codes
 RS="\[\033[0m\]"    # reset
@@ -47,6 +38,7 @@ source $HOME/.config/bash/python.sh
 source $HOME/.config/bash/rust.sh
 source $HOME/.config/bash/ruby.sh
 source $HOME/.config/bash/heroku.sh
+source $HOME/.config/bash/prompt.sh
 
 [[ -f ~/bin/gruvbox.sh ]] && source ~/bin/gruvbox.sh
 
