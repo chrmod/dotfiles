@@ -192,10 +192,6 @@ mode "resize" {
 
 
 # Startup
-
-# Start autocutsel to sync clipboards
-exec killall -q autocutsel; autocutsel -f && autocutsel -s PRIMARY -f
-
 exec --no-startup-id nm-applet
 exec --no-startup-id compton --backend glx --vsync opengl -b
 exec --no-startup-id hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
