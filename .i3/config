@@ -123,7 +123,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86MonBrightnessUp exec sudo /home/chrmod/bin/brightness + 100 # increase screen brightness
 bindsym XF86MonBrightnessDown exec sudo /home/chrmod/bin/brightness - 100 # decrease screen brightness
 
-bindsym XF86Display exec /home/chmod/bin/dispay_p.sh
+bindsym XF86Display exec /home/chrmod/bin/display_p.sh
 
 # Keyboard backlit
 bindsym XF86KbdBrightnessDown exec sudo ~/bin/asus_kbd_backlight down
