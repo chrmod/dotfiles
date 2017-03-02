@@ -1,7 +1,4 @@
 ! replace capslock with ctrl
-!clear lock
-!keycode 0xffe5 = Control_R
-! add Control = Control_R
 remove Lock = Caps_Lock
 remove Control = Control_L
 keysym Control_L = Caps_Lock
@@ -31,6 +28,6 @@ keycode 71 = XF86MonBrightnessDown F3 F3 XF86Switch_VT_5
 ! brightness up
 keycode 233 = F6 F6 F6 F6 XF86Switch_VT_6
 keycode 72 = XF86MonBrightnessUp F4 F4 XF86Switch_VT_6
-
+! toggle display
 keycode 235 = F8 F8 F8 F8 XF86Switch_VT_8
 keycode 74 = XF86Display F8 F8 XF86Switch_VT_8
