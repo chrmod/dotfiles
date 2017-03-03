@@ -1,26 +1,49 @@
-source ~/.mutt/chrmod@chrmod.net.account
-#source ~/.mutt/krzysztof.modras@gmail.com.account
+set editor = 'vim "+set filetype=mail" +/^$'
 
-macro index,pager b '<enter-command>toggle sidebar_visible<enter>'
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
+auto_view text/html
 
-set alias_file = ~/.config/mutt/addresses
+alternative_order text/enriched text/plain text/html
+
+bind index,pager A create-alias
+bind index G imap-fetch-mail
+
+set from = "krzysztof@cliqz.com"
+set realname = "Krzysztof Jan Modras"
+
+macro index,pager a  '<save-message>=Archives/2015<enter><enter>'
+macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
+
+#set use_from = no
 set crypt_autosign
-set editor = vim
-set header_cache = ~/.cache/mutt/headers
+set use_envelope_from = yes
+set imap_check_subscribed
 set imap_keepalive = 300
 set mail_check = 120
-set message_cachedir = ~/.cache/mutt/messages
-set quit = ask-yes
-set realname = 'Krzysztof Jan Modras'
-set record = +Sent
-set smtp_pass = $imap_pass
 set sort = threads
-set sort_aux = date
-set spoolfile = +INBOX
-set ssl_force_tls = yes
-set ssl_starttls = yes
-set use_from = yes
+set sort_aux = reverse-date
+set sidebar_width = 25
+set sidebar_visible=no
+set mime_forward=yes
+set mime_forward_rest=yes
 
-unset sort_re
+unset move
+color index blue default "~N"
+color index blue default "~O" # old messages
+
+set imap_user = krzysztof@cliqz.com
+set folder = imaps://imap.1und1.de
+set spoolfile= +INBOX
+set record= imaps://imap.1und1.de/Sent
+set postponed= imaps://imap.1und1.de/Drafts
+
+mailboxes "+INBOX"
+
+
+set smtp_url = "smtp://$imap_user@smtp.1und1.de:587/"
+
+set header_cache = ~/.cache/mutt
+set message_cachedir = "~/.cache/mutt"
+
+source ~/.config/mutt/passwords
+set alias_file = ~/.config/mutt/addresses
+set signature="~/.config/mutt/signature"

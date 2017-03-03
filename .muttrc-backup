@@ -1,0 +1,26 @@
+source ~/.mutt/chrmod@chrmod.net.account
+#source ~/.mutt/krzysztof.modras@gmail.com.account
+
+macro index,pager b '<enter-command>toggle sidebar_visible<enter>'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
+
+set alias_file = ~/.config/mutt/addresses
+set crypt_autosign
+set editor = vim
+set header_cache = ~/.cache/mutt/headers
+set imap_keepalive = 300
+set mail_check = 120
+set message_cachedir = ~/.cache/mutt/messages
+set quit = ask-yes
+set realname = 'Krzysztof Jan Modras'
+set record = +Sent
+set smtp_pass = $imap_pass
+set sort = threads
+set sort_aux = date
+set spoolfile = +INBOX
+set ssl_force_tls = yes
+set ssl_starttls = yes
+set use_from = yes
+
+unset sort_re
