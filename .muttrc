@@ -1,5 +1,11 @@
 set editor = 'vim "+set filetype=mail" +/^$'
 
+#source ~/.mutt/chrmod@chrmod.net.account
+#source ~/.mutt/krzysztof.modras@gmail.com.account
+#macro index,pager b '<enter-command>toggle sidebar_visible<enter>'
+#macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
+
 auto_view text/html
 
 alternative_order text/enriched text/plain text/html
@@ -25,6 +31,7 @@ set sidebar_width = 25
 set sidebar_visible=no
 set mime_forward=yes
 set mime_forward_rest=yes
+set quit = ask-yes
 
 unset move
 color index blue default "~N"
@@ -41,8 +48,8 @@ mailboxes "+INBOX"
 
 set smtp_url = "smtp://$imap_user@smtp.1und1.de:587/"
 
-set header_cache = ~/.cache/mutt
-set message_cachedir = "~/.cache/mutt"
+set header_cache = ~/.cache/mutt/headers
+set message_cachedir = ~/.cache/mutt/messages
 
 source ~/.config/mutt/passwords
 set alias_file = ~/.config/mutt/addresses
