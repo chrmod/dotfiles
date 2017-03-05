@@ -1,56 +1,46 @@
-set editor = 'vim "+set filetype=mail" +/^$'
-
-#source ~/.mutt/chrmod@chrmod.net.account
-#source ~/.mutt/krzysztof.modras@gmail.com.account
-#macro index,pager b '<enter-command>toggle sidebar_visible<enter>'
-#macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
-#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
-
 auto_view text/html
 
 alternative_order text/enriched text/plain text/html
 
-bind index,pager A create-alias
-bind index G imap-fetch-mail
+mailboxes "+INBOX"
 
-set from = "krzysztof@cliqz.com"
-set realname = "Krzysztof Jan Modras"
-
-macro index,pager a  '<save-message>=Archives/2015<enter><enter>'
+macro index,pager a  '<save-message>=Archives/2017<enter><enter>'
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 
-#set use_from = no
+set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
-set use_envelope_from = yes
+set editor = 'vim "+set filetype=mail" +/^$'
+set header_cache = ~/.cache/mutt/headers
 set imap_check_subscribed
 set imap_keepalive = 300
 set mail_check = 120
-set sort = threads
-set sort_aux = reverse-date
-set sidebar_width = 25
-set sidebar_visible=no
+set message_cachedir = ~/.cache/mutt/messages
 set mime_forward=yes
 set mime_forward_rest=yes
 set quit = ask-yes
+set realname = "Krzysztof Jan Modras"
+set sidebar_visible=no
+set sidebar_width = 25
+set signature="~/.config/mutt/signature"
+set sort = threads
+set sort_aux = reverse-date
+set use_envelope_from = yes
 
 unset move
 color index blue default "~N"
 color index blue default "~O" # old messages
 
-set imap_user = krzysztof@cliqz.com
 set folder = imaps://imap.1und1.de
-set spoolfile= +INBOX
-set record= imaps://imap.1und1.de/Sent
+set from = "krzysztof@cliqz.com"
+set imap_user = krzysztof@cliqz.com
 set postponed= imaps://imap.1und1.de/Drafts
-
-mailboxes "+INBOX"
-
-
+set record= imaps://imap.1und1.de/Sent
 set smtp_url = "smtp://$imap_user@smtp.1und1.de:587/"
-
-set header_cache = ~/.cache/mutt/headers
-set message_cachedir = ~/.cache/mutt/messages
+set spoolfile= +INBOX
 
 source ~/.config/mutt/passwords
-set alias_file = ~/.config/mutt/addresses
-set signature="~/.config/mutt/signature"
+
+#source ~/.mutt/chrmod@chrmod.net.account
+#source ~/.mutt/krzysztof.modras@gmail.com.account
+#macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
