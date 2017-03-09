@@ -205,6 +205,6 @@ exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id dropbox start
-exec --no-startup-id xautolock -time 3 -locker "xscreensaver-command -lock" -notify 30 -notifier "notify-send 'LOCKING screen in 30 seconds'"
+exec --no-startup-id xss-lock -- xscreensaver-command -lock
 
 gaps inner 5
