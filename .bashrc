@@ -45,3 +45,7 @@ source $HOME/.config/bash/prompt.sh
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
 export GPG_TTY
+
+HISTCONTROL=erasedups
+HISTSIZE=
+HISTFILESIZE=
