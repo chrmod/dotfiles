@@ -40,7 +40,7 @@ set spoolfile= +INBOX
 
 source ~/.config/mutt/passwords
 
-#source ~/.mutt/chrmod@chrmod.net.account
-#source ~/.mutt/krzysztof.modras@gmail.com.account
-#macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
-#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
+#source ~/.config/mutt/chrmod@chrmod.net.account
+#source ~/.config/mutt/krzysztof.modras@gmail.com.account
+#macro index <f2> '<sync-mailbox><enter-command>source ~/.config/mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.config/mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
