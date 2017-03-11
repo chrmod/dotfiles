@@ -39,8 +39,7 @@ source $HOME/.config/bash/rust.sh
 source $HOME/.config/bash/ruby.sh
 source $HOME/.config/bash/heroku.sh
 source $HOME/.config/bash/prompt.sh
-
-[[ -f ~/bin/gruvbox.sh ]] && source ~/bin/gruvbox.sh
+source $HOME/.config/bash/gruvbox.sh
 
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
