@@ -12,3 +12,5 @@ fi
 
 xrandr --output $PRIMARY   --mode $RESOLUTION_PRIMARY --primary \
        --output $SECONDARY --mode $RESOLUTION_SECONDARY --above $PRIMARY
+
+/home/chrmod/bin/wallpaper.sh

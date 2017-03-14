@@ -196,7 +196,7 @@ mode "resize" {
 # Startup
 exec --no-startup-id nm-applet
 exec --no-startup-id compton --backend glx --vsync opengl -b
-exec --no-startup-id hsetroot -full /home/chrmod/Pictures/wallpaper.jpeg
+exec --no-startup-id /home/chrmod/bin/wallpaper.sh
 exec --no-startup-id xset r off
 exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
 exec --no-startup-id start-pulseaudio-x11
