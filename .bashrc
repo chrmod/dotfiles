@@ -45,6 +45,6 @@ source $HOME/.config/bash/gruvbox.sh
 GPG_TTY=$(tty)
 export GPG_TTY
 
-HISTCONTROL=erasedups
+HISTCONTROL=ignoreboth
 HISTSIZE=
 HISTFILESIZE=
