@@ -28,11 +28,10 @@ BG1="\[\033[48;5;237m\]"
 BYEL2="\[\033[48;5;214m\]"
 FBG="\[\033[38;5;235m\]"
 
-PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w $RS\$git_branch$FRED\$git_dirty$RS\$ "
-
 # turn off CTRL+s
 stty stop undef
 
+source $HOME/.config/bash/scm-prompt.sh
 source $HOME/.config/bash/node.sh
 source $HOME/.config/bash/python.sh
 source $HOME/.config/bash/rust.sh
@@ -40,6 +39,8 @@ source $HOME/.config/bash/ruby.sh
 source $HOME/.config/bash/heroku.sh
 source $HOME/.config/bash/prompt.sh
 source $HOME/.config/bash/gruvbox.sh
+
+PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w$RS \$(_scm_prompt  '%s')$FRED\$git_dirty$RS\$ "
 
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
