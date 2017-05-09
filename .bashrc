@@ -39,6 +39,7 @@ source $HOME/.config/bash/ruby.sh
 source $HOME/.config/bash/heroku.sh
 source $HOME/.config/bash/prompt.sh
 source $HOME/.config/bash/gruvbox.sh
+source $HOME/.config/bash/android.sh
 
 PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w$RS \$(_scm_prompt  '%s')$FRED\$git_dirty$RS\$ "
 
