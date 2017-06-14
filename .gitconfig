@@ -10,5 +10,5 @@
 	excludesfile = ~/.gitignore
 
 [alias]
-  start = !echo "Fetch upstream/master" && git fetch upstream && git checkout upstream/master --quiet && git branch -d master && git checkout -b master
+  start = !BRANCH=`git remote | grep upstream || echo origin` && echo "Fetch $BRANCH/master" && git fetch $BRANCH && git checkout $BRANCH/master --quiet && git branch -d master && git checkout -b master
   ll = log --format=format:'%C(bold blue)%h%C(reset) %C(bold cyan)%ai%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(bold white)[%an]%C(reset)' -M --graph --name-status
