@@ -2,6 +2,9 @@
 	email = chrmod@chrmod.net
 	name = Krzysztof Jan Modras
 
+[github]
+  user = chrmod
+
 [push]
 	default = current
 
