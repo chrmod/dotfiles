@@ -1,0 +1,25 @@
+# Global defaults
+Create Both
+Expunge Both
+SyncState *
+
+IMAPAccount Home
+Host imap.gmail.com
+User krzysztof.modras@gmail.com
+PassCmd "cat ~/.config/mutt/password-home"
+SSLType IMAPS
+AuthMechs LOGIN
+
+IMAPStore Home-remote
+Account Home
+
+MaildirStore Home-local
+Path ~/.mail/Home/
+Inbox ~/.mail/Home/Home
+
+Channel Home-Home
+Master :Home-remote:INBOX
+Slave :Home-local:Home
+
+Group home
+Channel Home-Home
