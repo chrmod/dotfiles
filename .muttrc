@@ -2,11 +2,28 @@ auto_view text/html
 
 alternative_order text/enriched text/plain text/html
 
-mailboxes "+INBOX"
+mailboxes "+Work/Work" "+Home/Home"
 
-macro index,pager a  '<save-message>=Archives/2017<enter><enter>'
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 
+bind index '[' sidebar-prev
+bind index ']' sidebar-next
+bind index '#' sidebar-open
+bind pager '[' sidebar-prev
+bind pager ']' sidebar-next
+bind pager '#' sidebar-open
+
+set mbox_type=maildir
+
+#set sidebar_folder_indent
+#set sidebar_format = "%B (%N)"
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_short_path
+set sidebar_visible
+set sidebar_width = 25
+set sidebar_sort_method = 'unsorted'
+set sidebar_new_mail_only = no
+set mail_check_stats
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set editor = 'vim "+set filetype=mail" +/^$'
@@ -19,8 +36,6 @@ set mime_forward=yes
 set mime_forward_rest=yes
 set quit = ask-yes
 set realname = "Krzysztof Jan Modras"
-set sidebar_visible=no
-set sidebar_width = 25
 set signature="~/.config/mutt/signature"
 set sort = threads
 set sort_aux = reverse-date
@@ -30,13 +45,15 @@ unset move
 color index blue default "~N"
 color index blue default "~O" # old messages
 
-set folder = imaps://outlook.office365.com
+#set folder = imaps://outlook.office365.com
+set folder = ~/Mail
+set spoolfile = "+Work/Work"
 set from = "krzysztof@cliqz.com"
+#set postponed= imaps://outlook.office365.com/Drafts
+#set record= imaps://outlook.office365.com/Sent
 set imap_user = krzysztof@cliqz.com
-set postponed= imaps://outlook.office365.com/Drafts
-set record= imaps://outlook.office365.com/Sent
 set smtp_url = "smtp://$imap_user@smtp.office365.com:587/"
-set spoolfile= +INBOX
+#set spoolfile= +INBOX
 
 source ~/.config/mutt/passwords
 
