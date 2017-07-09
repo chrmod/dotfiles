@@ -1,0 +1,9 @@
+session_name: mail
+windows:
+  - window_name: mutt
+    focus: true
+    panes:
+      - mutt
+  - window_name: sync
+    panes:
+      - emailsync

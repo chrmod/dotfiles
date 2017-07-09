@@ -50,3 +50,5 @@ export GPG_TTY
 HISTCONTROL=ignoreboth
 HISTSIZE=
 HISTFILESIZE=
+
+function emailsync() { mbsync work; sleep 60; emailsync; }
