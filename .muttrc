@@ -2,7 +2,8 @@ auto_view text/html
 
 alternative_order text/enriched text/plain text/html
 
-mailboxes "+Work/Work" "+Home/Home"
+mailboxes "+Work/Work" +Work/Work.Archive +Work/Work.Sent +Work/Work.Trash +Work/Work.Spam \
+  "+Home/Home"
 
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 
@@ -18,6 +19,7 @@ set mbox_type=maildir
 #set sidebar_folder_indent
 #set sidebar_format = "%B (%N)"
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_folder_indent
 set sidebar_short_path
 set sidebar_visible
 set sidebar_width = 25
