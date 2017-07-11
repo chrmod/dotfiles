@@ -2,8 +2,8 @@ auto_view text/html
 
 alternative_order text/enriched text/plain text/html
 
-mailboxes "+Work/Work" +Work/Work.Archive +Work/Work.Sent +Work/Work.Trash +Work/Work.Spam \
-  "+Home/Home"
+mailboxes +Work/Work +Work/Work.Archive +Work/Work.Sent \
+  +Home/Home +Home/Home.Archive +Home/Home.Sent
 
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 
@@ -16,8 +16,7 @@ bind pager '#' sidebar-open
 
 set mbox_type=maildir
 
-#set sidebar_folder_indent
-#set sidebar_format = "%B (%N)"
+set ssl_force_tls = yes
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
 set sidebar_folder_indent
 set sidebar_short_path
@@ -38,7 +37,6 @@ set mime_forward=yes
 set mime_forward_rest=yes
 set quit = ask-yes
 set realname = "Krzysztof Jan Modras"
-set signature="~/.config/mutt/signature"
 set sort = threads
 set sort_aux = reverse-date
 set use_envelope_from = yes
@@ -49,15 +47,31 @@ color index blue default "~O" # old messages
 
 set folder = ~/Mail
 set spoolfile = "+Work/Work"
+
 set from = "krzysztof@cliqz.com"
-set postponed= imaps://outlook.office365.com/Drafts
-set record= "imaps://outlook.office365.com/Sent Items"
 set imap_user = krzysztof@cliqz.com
-set smtp_url = "smtp://$imap_user@smtp.office365.com:587/"
+set postponed = imaps://outlook.office365.com/Drafts
+set record = "imaps://outlook.office365.com/Sent Items"
+set smtp_url = "smtp://krzysztof@cliqz.com@smtp.office365.com:587/"
+set signature="~/.config/mutt/signature"
 
-source ~/.config/mutt/passwords
+source ~/.config/mutt/passwords-work
 
-#source ~/.config/mutt/chrmod@chrmod.net.account
-#source ~/.config/mutt/krzysztof.modras@gmail.com.account
-#macro index <f2> '<sync-mailbox><enter-command>source ~/.config/mutt/chrmod@chrmod.net.account<enter><change-folder>!<enter>'
-#macro index <f3> '<sync-mailbox><enter-command>source ~/.config/mutt/krzysztof.modras@gmail.com.account<enter><change-folder>!<enter>'
+folder-hook +Home/ source ~/.config/mutt/passwords-home
+folder-hook +Home/ set from = "krzysztof.modras@gmail.com"
+folder-hook +Home/ set imap_user = krzysztof.modras@gmail.com
+folder-hook +Home/ set mbox = "+Home/Home.Archive"
+folder-hook +Home/ set postponed = "+Home/Home.Drafts"
+folder-hook +Home/ set smtp_url = "smtps://krzysztof.modras@gmail.com@smtp.gmail.com:465/"
+folder-hook +Home/ set spoolfile = "+Home/Home"
+folder-hook +Home/ set trash = "+Home/Home.Trash"
+folder-hook +Home/ unset record
+folder-hook +Home/ unset signature
+
+folder-hook +Work/ source ~/.config/mutt/passwords-work
+folder-hook +Work/ set from = "krzysztof@cliqz.com"
+folder-hook +Work/ set imap_user = "krzysztof@cliqz.com"
+folder-hook +Work/ set postponed = "imaps://outlook.office365.com/Drafs"
+folder-hook +Work/ 'set record = "imaps://outlook.office365.com/Sent Items"'
+folder-hook +Work/ set signature="~/.config/mutt/signature"
+folder-hook +Work/ set smtp_url = "smtp://krzysztof@cliqz.com@smtp.office365.com:587/"
