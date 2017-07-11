@@ -47,15 +47,13 @@ unset move
 color index blue default "~N"
 color index blue default "~O" # old messages
 
-#set folder = imaps://outlook.office365.com
 set folder = ~/Mail
 set spoolfile = "+Work/Work"
 set from = "krzysztof@cliqz.com"
-#set postponed= imaps://outlook.office365.com/Drafts
-#set record= imaps://outlook.office365.com/Sent
+set postponed= imaps://outlook.office365.com/Drafts
+set record= "imaps://outlook.office365.com/Sent Items"
 set imap_user = krzysztof@cliqz.com
 set smtp_url = "smtp://$imap_user@smtp.office365.com:587/"
-#set spoolfile= +INBOX
 
 source ~/.config/mutt/passwords
 
