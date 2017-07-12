@@ -72,7 +72,7 @@ folder-hook +Work/ source ~/.config/mutt/passwords-work
 folder-hook +Work/ set from = "krzysztof@cliqz.com"
 folder-hook +Work/ set imap_user = "krzysztof@cliqz.com"
 folder-hook +Work/ set postponed = "imaps://outlook.office365.com/Drafs"
-folder-hook +Work/ set record = "imaps://outlook.office365.com/Sent Items"'
+folder-hook +Work/ 'set record = "imaps://outlook.office365.com/Sent Items"'
 folder-hook +Work/ set signature="~/.config/mutt/signature"
 folder-hook +Home/ set spoolfile = "+Work/Work"
 folder-hook +Work/ set smtp_url = "smtp://krzysztof@cliqz.com@smtp.office365.com:587/"
