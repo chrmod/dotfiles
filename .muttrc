@@ -6,6 +6,7 @@ mailboxes +Work/Work +Work/Work.Archive +Work/Work.Sent +Work/Work.Drafts \
   +Home/Home +Home/Home.Archive +Home/Home.Sent +Home/Home.Drafts
 
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
+#macro index,pager A '<save-message>=Home/Home<enter><enter>'
 
 bind index '[' sidebar-prev
 bind index ']' sidebar-next
@@ -40,8 +41,10 @@ set realname = "Krzysztof Jan Modras"
 set sort = threads
 set sort_aux = reverse-date
 set use_envelope_from = yes
+set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
 
 unset move
+
 color index blue default "~N"
 color index blue default "~O" # old messages
 
