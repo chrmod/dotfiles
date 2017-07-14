@@ -4,6 +4,9 @@ windows:
     focus: true
     panes:
       - mutt
-  - window_name: sync
+  - window_name: sync work
     panes:
       - emailsync
+  - window_name: sync work
+    panes:
+      - emailsync home

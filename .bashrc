@@ -51,4 +51,4 @@ HISTCONTROL=ignoreboth
 HISTSIZE=
 HISTFILESIZE=
 
-function emailsync() { mbsync work; sleep 60; emailsync; }
+function emailsync() { mbsync $1 && echo "synced and wait 60s" && sleep 60 && emailsync; }
