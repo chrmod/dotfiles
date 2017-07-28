@@ -8,6 +8,9 @@
 [push]
 	default = current
 
+[commit]
+  gpgsign = true
+
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
