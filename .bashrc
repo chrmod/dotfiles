@@ -40,6 +40,7 @@ source $HOME/.config/bash/heroku.sh
 source $HOME/.config/bash/prompt.sh
 source $HOME/.config/bash/gruvbox.sh
 source $HOME/.config/bash/android.sh
+source $HOME/.config/bash/email.sh
 
 PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w$RS \$(_scm_prompt  '%s')$FRED\$git_dirty$RS\$ "
 
@@ -51,4 +52,3 @@ HISTCONTROL=ignoreboth
 HISTSIZE=
 HISTFILESIZE=
 
-function emailsync() { mbsync $1 && echo "synced and wait 60s" && sleep 60 && emailsync $1; }
