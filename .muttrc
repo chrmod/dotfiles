@@ -39,7 +39,7 @@ set mime_forward_rest=yes
 set quit = ask-yes
 set realname = "Krzysztof Jan Modras"
 set sort = threads
-set sort_aux = threads
+set sort_aux = reverse-date
 set use_envelope_from = yes
 set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
 
