@@ -48,7 +48,10 @@ PS1="$BYEL2$FBG$HC[${debian_chroot:+($debian_chroot)}\u@\h]$RS $bold$FBLE\w$RS \
 GPG_TTY=$(tty)
 export GPG_TTY
 
-HISTCONTROL=ignoreboth
+# Avoid duplicates
+HISTCONTROL=ignoreboth:erasedups
 HISTSIZE=
 HISTFILESIZE=
 
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
