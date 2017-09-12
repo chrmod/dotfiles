@@ -1,4 +1,5 @@
 session_name: vpn
+suppress_history: false
 windows:
   - window_name: primary
     panes:

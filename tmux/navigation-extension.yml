@@ -1,11 +1,8 @@
 session_name: navigation-extension
+suppress_history: false
 start_directory: "~/Projects/cliqz/navigation-extension"
 windows:
   - window_name: fern serve
-    panes:
-      - pane
-  - window_name: ember serve
-    start_directory: subprojects/fresh-tab-frontend
     panes:
       - pane
   - window_name: vim
