@@ -1,6 +1,5 @@
-# load system defaults
-source /etc/skel/.bashrc
 
+source $HOME/.config/bash/skel.sh
 source $HOME/.config/bash/scm-prompt.sh
 source $HOME/.config/bash/node.sh
 source $HOME/.config/bash/python.sh
