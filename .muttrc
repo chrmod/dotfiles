@@ -28,6 +28,7 @@ set sidebar_new_mail_only = no
 set mail_check_stats
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
+set crypt_autosmime = no
 set editor = 'vim "+set filetype=mail" +/^$'
 set header_cache = ~/.cache/mutt/headers
 set imap_check_subscribed
