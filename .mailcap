@@ -1,2 +1,2 @@
-text/html; /usr/bin/nohup firefox -remote "openURL("%s", new-tab)" >/dev/null 2>&1 & needsterminal
+text/html; firefox %s; needsterminal
 text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput;
