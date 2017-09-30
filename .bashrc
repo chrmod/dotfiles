@@ -17,6 +17,7 @@ source $HOME/.config/bash/prompt.sh
 source $HOME/.config/bash/gruvbox.sh
 source $HOME/.config/bash/android.sh
 source $HOME/.config/bash/email.sh
+source $HOME/.config/bash/history.sh
 
 if [ -z "$PS1" ]; then
   # turn off CTRL+s
@@ -26,11 +27,3 @@ fi
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
 export GPG_TTY
-
-# Avoid duplicates
-HISTCONTROL=ignoreboth:erasedups
-HISTSIZE=
-HISTFILESIZE=
-
-# When the shell exits, append to the history file instead of overwriting it
-shopt -s histappend
