@@ -18,6 +18,7 @@ source $HOME/.config/bash/gruvbox.sh
 source $HOME/.config/bash/android.sh
 source $HOME/.config/bash/email.sh
 source $HOME/.config/bash/history.sh
+source $HOME/.config/bash/nix.sh
 
 if [ -z "$PS1" ]; then
   # turn off CTRL+s
