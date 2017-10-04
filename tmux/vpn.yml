@@ -1,6 +1,0 @@
-session_name: vpn
-suppress_history: false
-windows:
-  - window_name: primary
-    panes:
-      - sudo openvpn vpn/krzysztof-us-east.ovpn
