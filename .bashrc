@@ -7,6 +7,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 source $HOME/.config/bash/skel.sh
+source $HOME/.config/bash/locale.sh
 source $HOME/.config/bash/scm-prompt.sh
 source $HOME/.config/bash/node.sh
 source $HOME/.config/bash/python.sh
