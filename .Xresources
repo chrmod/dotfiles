@@ -19,11 +19,6 @@ URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
 URxvt.matcher.launcher.2: gvim +$2 $1
 
-URxvt.keysym.F11:          perl:fullscreen:switch
-
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger:  C-Up
-
 URxvt.url-launcher:        /usr/bin/firefox
 URxvt.keysym.M-Delete:     perl:matcher:list
 URxvt.colorUL:             #7780a1
