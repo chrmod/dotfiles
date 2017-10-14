@@ -204,7 +204,6 @@ exec --no-startup-id libinput-gestures-setup autostart
 exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id xscreensaver -no-splash
-exec --no-startup-id dropbox start
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 
 gaps inner 5
