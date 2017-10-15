@@ -2,6 +2,7 @@
 *.swo
 *~
 .vim/bundle
+.vim/view
 .vim/spell/en.utf-8.add.spl
 .netrwhist
 bin/packer

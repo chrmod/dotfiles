@@ -15,3 +15,9 @@ if executable('rg')
   " rg is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+" https://github.com/ElmCast/elm-vim
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+
+let g:elm_syntastic_show_warnings = 1
