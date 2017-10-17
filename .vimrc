@@ -25,4 +25,3 @@ let mapleader=" "
 
 " shortcuts
 map <Leader><Space> :noh<CR>
-map <Leader><Tab> <C-^>
