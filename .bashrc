@@ -21,10 +21,11 @@ source $HOME/.config/bash/email.sh
 source $HOME/.config/bash/history.sh
 source $HOME/.config/bash/nix.sh
 
-if [ -z "$PS1" ]; then
-  # turn off CTRL+s
+# detect interactive shell
+case $- in *i*)
+  # turn off ctrl+s
   stty stop undef
-fi
+esac
 
 # Fix pinentry-ncurses
 GPG_TTY=$(tty)
