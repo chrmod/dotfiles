@@ -16,6 +16,7 @@ Plugin 'terryma/vim-multiple-cursors' " Multi cursors
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
