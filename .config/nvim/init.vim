@@ -1,4 +1,3 @@
-source $HOME/.config/vim/theme.vimrc
 
 call plug#begin('~/.vim/plugged')
 
@@ -18,3 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'Quramy/tsuquyomi'
 
 call plug#end()
+
+source $HOME/.config/vim/theme.vimrc
+source $HOME/.config/vim/settings.vimrc
+source $HOME/.config/vim/plugins-config.vimrc
