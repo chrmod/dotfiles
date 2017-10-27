@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'ElmCast/elm-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -8,11 +7,25 @@ Plug 'godlygeek/tabular'
 Plug 'rstacruz/vim-closer'
 Plug 'sbdchd/neoformat'
 Plug 'scrooloose/nerdcommenter'
-Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+
+Plug 'w0rp/ale'
+
+Plug 'sheerun/vim-polyglot' " Syntax
+Plug 'Shougo/deoplete.nvim' " Autocomplete
+
+" typescript
+Plug 'mhartington/deoplete-typescript'
+
+" elm
+Plug 'pbogut/deoplete-elm'
+Plug 'ElmCast/elm-vim'
+
+" Enable deoplete at startup
+let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
