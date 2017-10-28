@@ -194,16 +194,26 @@ mode "resize" {
 
 
 # Startup
+# network manager
 exec --no-startup-id nm-applet
+# composition manager - for transparency and smooth rendering
 exec --no-startup-id compton -b
 exec --no-startup-id /home/chrmod/bin/wallpaper.sh
+# turn off keystroke repeating
 exec --no-startup-id xset r off
+# switch keyboard layout
 exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
+# start sound deamon
 exec --no-startup-id start-pulseaudio-x11
+# touchpad
 exec --no-startup-id libinput-gestures-setup autostart
+# keyboard configuration
 exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
+# start terminal deamon
 exec --no-startup-id urxvtd -q -o -f
+# screensaver
 exec --no-startup-id xscreensaver -no-splash
+# screen locker
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 
 gaps inner 5
