@@ -202,7 +202,7 @@ exec --no-startup-id /home/chrmod/bin/wallpaper.sh
 # turn off keystroke repeating
 exec --no-startup-id xset r off
 # switch keyboard layout
-exec --no-startup-id setxkbmap -option 'grp:ctrl_alt_toggle'
+exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
 # start sound deamon
 exec --no-startup-id start-pulseaudio-x11
 # touchpad
