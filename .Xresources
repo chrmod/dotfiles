@@ -6,6 +6,9 @@ URxvt.letterSpace: -1
 URxvt.internalBorder:      0
 URxvt.externalBorder:      0
 
+! Turn off scrolling
+URxvt*saveLines:0
+
 URxvt.scrollBar:           false
 
 URxvt*fading:              30
