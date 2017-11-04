@@ -12,7 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 
-Plug 'w0rp/ale'
+Plug 'w0rp/ale' " Linter
 
 Plug 'sheerun/vim-polyglot' " Syntax
 Plug 'Shougo/deoplete.nvim' " Autocomplete
@@ -32,3 +32,6 @@ call plug#end()
 source $HOME/.config/vim/theme.vimrc
 source $HOME/.config/vim/settings.vimrc
 source $HOME/.config/vim/plugins-config.vimrc
+source $HOME/.config/nvim/plugins-config.vimrc
+
+
