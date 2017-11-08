@@ -15,17 +15,6 @@ bind pager '[' sidebar-prev
 bind pager ']' sidebar-next
 bind pager '#' sidebar-open
 
-set mbox_type=maildir
-
-set ssl_force_tls = yes
-set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
-set sidebar_folder_indent
-set sidebar_short_path
-set sidebar_visible
-set sidebar_width = 25
-set sidebar_sort_method = 'unsorted'
-set sidebar_new_mail_only = no
-set mail_check_stats
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set crypt_autosmime = no
@@ -33,21 +22,32 @@ set editor = 'vim "+set filetype=mail" +/^$'
 set header_cache = ~/.cache/mutt/headers
 set imap_check_subscribed
 set imap_keepalive = 300
+set index_format="%3C)  %Z  %{%Y-%m-%d}  %-20.20L  %s"
 set mail_check = 120
+set mail_check_stats
+set mbox_type=maildir
 set message_cachedir = ~/.cache/mutt/messages
 set mime_forward=yes
 set mime_forward_rest=yes
+set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
 set quit = ask-yes
 set realname = "Krzysztof Jan Modras"
+set sidebar_folder_indent
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_new_mail_only = no
+set sidebar_short_path
+set sidebar_sort_method = 'unsorted'
+set sidebar_visible
+set sidebar_width = 25
 set sort = threads
 set sort_aux = reverse-date
+set ssl_force_tls = yes
 set use_envelope_from = yes
-set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
 
 unset move
 
-color index blue default "~N"
-color index blue default "~O" # old messages
+color index blue black "~N"
+color index blue black "~O" # old messages
 
 set folder = ~/Mail
 set spoolfile = "+Work/Work"
