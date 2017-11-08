@@ -18,14 +18,16 @@ bind pager '[' sidebar-prev
 bind pager ']' sidebar-next
 bind pager '#' sidebar-open
 
+
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set crypt_autosmime = no
 set editor = 'vim "+set filetype=mail" +/^$'
 set header_cache = ~/.cache/mutt/headers
+set help = no
 set imap_check_subscribed
 set imap_keepalive = 300
-set index_format="%3C)  %Z  %{%Y-%m-%d}  %-20.20L  %s"
+set index_format=" %3C)  %Z  %{%Y-%m-%d}  %-20.20L  %s"
 set mail_check = 120
 set mail_check_stats
 set mbox_type=maildir
@@ -35,8 +37,9 @@ set mime_forward_rest=yes
 set pager_stop = yes # Don't move to the next message when paging past the bottom of a message.
 set quit = ask-yes
 set realname = "Krzysztof Jan Modras"
+set sidebar_divider_char = " "
 set sidebar_folder_indent
-set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S  "
 set sidebar_new_mail_only = no
 set sidebar_short_path
 set sidebar_sort_method = 'unsorted'
@@ -45,12 +48,16 @@ set sidebar_width = 25
 set sort = threads
 set sort_aux = reverse-date
 set ssl_force_tls = yes
+set status_format = ""
 set use_envelope_from = yes
-
 unset move
 
 color index blue black "~N"
 color index blue black "~O" # old messages
+color indicator brightwhite color237
+color sidebar_divider color244 color237
+color sidebar_indicator color244 color237
+color status color244 color237
 
 set folder = ~/Mail
 set spoolfile = "+Work/Work"
