@@ -8,6 +8,9 @@ mailboxes +Work/Work +Work/Work.Archive +Work/Work.Sent +Work/Work.Drafts \
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 macro index,pager a '<save-message>+Work/Work.Archive<enter><enter>'
 
+# starts with first message selected, not first unread
+push <first-entry>
+
 bind index '[' sidebar-prev
 bind index ']' sidebar-next
 bind index '#' sidebar-open
