@@ -17,7 +17,6 @@ source $HOME/.config/bash/heroku.sh
 source $HOME/.config/bash/prompt.sh
 source $HOME/.config/bash/gruvbox.sh
 source $HOME/.config/bash/android.sh
-source $HOME/.config/bash/email.sh
 source $HOME/.config/bash/history.sh
 source $HOME/.config/bash/nix.sh
 

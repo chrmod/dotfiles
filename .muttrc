@@ -18,7 +18,7 @@ bind pager '[' sidebar-prev
 bind pager ']' sidebar-next
 bind pager '#' sidebar-open
 
-
+set timeout=10
 set alias_file = ~/.config/mutt/addresses
 set crypt_autosign
 set crypt_autosmime = no
