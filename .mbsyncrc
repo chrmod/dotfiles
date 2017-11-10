@@ -125,3 +125,27 @@ Channel Work-Spam
 Channel Work-Trash
 Channel Work-Archive
 Channel Work-Default
+
+#### chrmod@chrmod.net #####
+#
+IMAPAccount chrmod
+Host imap.mailbox.org
+User chrmod@chrmod.net
+PassCmd "cat ~/.config/mutt/password-chrmod.net"
+SSLType IMAPS
+AuthMechs LOGIN
+PipelineDepth 1
+
+IMAPStore chrmod-remote
+Account chrmod
+
+MaildirStore chrmod-local
+Path ~/Mail/chrmod/
+Inbox ~/Mail/chrmod/chrmod
+
+Channel chrmod-inbox
+Master :chrmod-remote:INBOX
+Slave :chrmod-local:chrmod
+
+Group chrmod
+Channel chrmod-inbox
