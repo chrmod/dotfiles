@@ -5,8 +5,8 @@ RefuseManualStop=no
 
 [Timer]
 Persistent=false
-OnBootSec= 5min
-OnUnitActiveSec= 10min
+OnBootSec=5min
+OnUnitActiveSec=10min
 Unit=checkmail.service
 
 [Install]
