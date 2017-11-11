@@ -147,5 +147,25 @@ Channel chrmod-inbox
 Master :chrmod-remote:INBOX
 Slave :chrmod-local:chrmod
 
+Channel chrmod-Sent
+Master :chrmod-remote:"Sent"
+Slave :chrmod-local:chrmod.Sent
+
+Channel chrmod-Spam
+Master :chrmod-remote:"Junk"
+Slave :chrmod-local:chrmod.Spam
+
+Channel chrmod-Trash
+Master :chrmod-remote:"Trash"
+Slave :chrmod-local:chrmod.Trash
+
+Channel chrmod-Archive
+Master :chrmod-remote:"Archive"
+Slave :chrmod-local:chrmod.Archive
+
 Group chrmod
 Channel chrmod-inbox
+Channel chrmod-Sent
+Channel chrmod-Spam
+Channel chrmod-Trash
+Channel chrmod-Archive
