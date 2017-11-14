@@ -3,7 +3,8 @@ auto_view text/html
 alternative_order text/enriched text/plain text/html
 
 mailboxes +Work/Work +Work/Work.Archive +Work/Work.Sent +Work/Work.Drafts \
-  +Home/Home +Home/Home.Archive +Home/Home.Sent +Home/Home.Drafts +chrmod/chrmod
+  +Home/Home +Home/Home.Archive +Home/Home.Sent +Home/Home.Drafts \
+  +chrmod/chrmod +chrmod/chrmod.Archive +chrmod/chrmod.Sent +chmod/chrmod.Drafs
 
 macro index,pager b  '<enter-command>toggle sidebar_visible<enter>'
 macro index,pager a '<save-message>+Work/Work.Archive<enter><enter>'
@@ -90,3 +91,13 @@ folder-hook +Work/ 'set record = "imaps://outlook.office365.com/Sent Items"'
 folder-hook +Work/ set signature="~/.config/mutt/signature"
 folder-hook +Work/ set spoolfile = "+Work/Work"
 folder-hook +Work/ set smtp_url = "smtp://krzysztof@cliqz.com@smtp.office365.com:587/"
+
+folder-hook +chrmod/ source ~/.config/mutt/passwords-chrmod.net
+folder-hook +chrmod/ set from = "chrmod@chrmod.net"
+folder-hook +chrmod/ set imap_user = "chrmod@chrmod.net"
+folder-hook +chrmod/ set postponed = "imaps://imap.mailbox.org/Drafts"
+folder-hook +chrmod/ set mbox = "+chrmod/chrmod.Archive"
+folder-hook +chrmod/ 'set record = "imaps://imap.mailbox.org/Sent"'
+folder-hook +chrmod/ set spoolfile = "+chrmod/chrmod"
+folder-hook +chrmod/ set smtp_url = "smtp://chrmod@chrmod.net@smtp.mailbox.org:587/"
+folder-hook +chrmod/ unset signature
