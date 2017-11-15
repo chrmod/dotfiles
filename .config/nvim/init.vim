@@ -24,8 +24,8 @@ Plug 'mhartington/deoplete-typescript'
 Plug 'pbogut/deoplete-elm'
 Plug 'ElmCast/elm-vim'
 
-" Enable deoplete at startup
-let g:deoplete#enable_at_startup = 1
+" Disable deoplete at startup
+let g:deoplete#enable_at_startup = 0
 
 call plug#end()
 
