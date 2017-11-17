@@ -1,8 +1,13 @@
-# for there are files that do not start with a dot
+# dotfiles
 
-running at asus ux390us with rather typical bare bone setup including:
+hardware: Asus Zenbook 3 (UX390UA)
+
+base software:
+* ubuntu 17.10
+
+software:
 * i3
 * bash
-* vim
+* neovim
 * tmux
 * mutt
