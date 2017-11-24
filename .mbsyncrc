@@ -93,6 +93,10 @@ Channel Work-Archive
 Master :Work-remote:"Archive"
 Slave :Work-local:Work.Archive
 
+Channel Work-Notifications
+Master :Work-remote:"notifications/browser-core"
+Slave :Work-local:Work.Notifications
+
 # Catch-all for everything else: note that the `Patterns` have to exclude both
 # the remote and local names for all the folders we want to exclude (except
 # "INBOX", which is special-cased, it would seem).
@@ -115,15 +119,16 @@ Patterns !Sent
 Patterns !Spam
 Patterns !Tasks
 Patterns !Trash
+Patterns !Notifications
+Patterns !"notifications/browser-core"
 
-# Lower-case "w" here to match "~/.imapfilter/work.lua" script name (see
-# "~/.mutt/scripts/sync.sh").
 Group work
 Channel Work-Work
 Channel Work-Sent
 Channel Work-Spam
 Channel Work-Trash
 Channel Work-Archive
+Channel Work-Notifications
 Channel Work-Default
 
 #### chrmod@chrmod.net #####
