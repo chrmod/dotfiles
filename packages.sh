@@ -2,13 +2,14 @@
 
 packages=(
   i3-wm
+  kpcli
   neovim
   pavucontrol # audio controls
   rofi
   tmux
   tmuxp
-  xss-lock
   xscreensaver
+  xss-lock
 )
 
 sudo apt-get install ${packages[@]}
