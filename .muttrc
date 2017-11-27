@@ -1,6 +1,7 @@
 alternative_order text/enriched text/plain text/html
 
 auto_view text/html
+auto_view text/calendar application/ics
 
 bind index '#' sidebar-open
 bind index '[' sidebar-prev
@@ -86,7 +87,7 @@ set sidebar_visible
 set sidebar_width = 25
 set sort = threads
 set sort_aux = reverse-date
-set spoolfile = "+chrmod/chrmod" # default inbox
+set spoolfile = "+Work/Work" # default inbox
 set ssl_force_tls = yes
 set status_format = ""
 set timeout=10

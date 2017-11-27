@@ -1,2 +1,4 @@
 text/html; firefox %s; needsterminal
 text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput;
+text/calendar; /home/chrmod/.local/bin/mutt-ics; copiousoutput
+application/ics; /home/chrmod/.local/bin/mutt-ics; copiousoutput
