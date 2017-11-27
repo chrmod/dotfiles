@@ -29,5 +29,11 @@ account1 = IMAP {
   ssl = "tls1"
 }
 
-messages = account1["INBOX"]:contain_to("browser-core@cliqz.com")
+messages = account1["INBOX"]:contain_field("TO", "browser-core@cliqz.com")
+messages:move_messages(account1["notifications/browser-core"])
+
+messages = account1["INBOX"]:contain_from("sisense-admin@sisense.com")
+messages:move_messages(account1["notifications/browser-core"])
+
+messages = account1["INBOX"]:contain_from("jira@cliqztix.atlassian.net")
 messages:move_messages(account1["notifications/browser-core"])
