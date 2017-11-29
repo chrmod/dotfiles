@@ -154,7 +154,7 @@ new_window pixel 0
 # finds out, if available)
 bar {
         i3bar_command i3bar -t
-        position top
+        position bottom
         status_command SCRIPT_DIR=$HOME/.i3/scripts i3blocks -c ~/.i3/i3blocks.conf
         separator_symbol " | "
         colors {
