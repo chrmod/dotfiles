@@ -19,6 +19,7 @@ source $HOME/.config/bash/gruvbox.sh
 source $HOME/.config/bash/android.sh
 source $HOME/.config/bash/history.sh
 source $HOME/.config/bash/nix.sh
+source $HOME/.config/bash/transfer.sh
 
 # detect interactive shell
 case $- in *i*)
