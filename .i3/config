@@ -215,5 +215,7 @@ exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id xscreensaver -no-splash
 # screen locker
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
+# dropbox
+exec --no-startup-id dropbox start
 
 gaps inner 5
