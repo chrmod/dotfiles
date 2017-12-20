@@ -1,0 +1,42 @@
+[Added Associations]
+application/x-iwork-keynote-sffkey=libreoffice-impress.desktop;
+application/x-tar=org.gnome.FileRoller.desktop;
+application/x-keepass2=keepassx.desktop;
+text/plain=gedit.desktop;
+x-scheme-handler/http=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+x-scheme-handler/https=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+x-scheme-handler/ftp=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+x-scheme-handler/chrome=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+text/html=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/x-extension-htm=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/x-extension-html=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/x-extension-shtml=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/xhtml+xml=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/x-extension-xhtml=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+application/x-extension-xht=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
+image/jpeg=eog.desktop;
+application/pdf=evince.desktop;
+application/vnd.snap=org.gnome.FileRoller.desktop;
+application/x-compressed-tar=org.gnome.FileRoller.desktop;
+application/pgp-keys=gedit.desktop;
+application/x-xpinstall=org.gnome.FileRoller.desktop;
+video/mp2t=org.gnome.Totem.desktop;
+application/x-shellscript=gvim.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+
+[Default Applications]
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/ftp=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+x-scheme-handler/chrome=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+text/html=firefox.desktop
+application/x-extension-htm=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+application/x-extension-html=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+application/x-extension-shtml=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+application/xhtml+xml=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+application/x-extension-xhtml=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+application/x-extension-xht=userapp-Firefox Developer Edition-FZAQ9Y.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+inode/directory=thunar.desktop
+application/x-gnome-saved-search=thunar.desktop
