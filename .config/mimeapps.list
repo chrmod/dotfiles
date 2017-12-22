@@ -2,7 +2,7 @@
 application/x-iwork-keynote-sffkey=libreoffice-impress.desktop;
 application/x-tar=org.gnome.FileRoller.desktop;
 application/x-keepass2=keepassx.desktop;
-text/plain=gedit.desktop;
+text/plain=gvim.desktop;
 x-scheme-handler/http=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
 x-scheme-handler/https=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
 x-scheme-handler/ftp=firefox.desktop;userapp-Firefox Developer Edition-FZAQ9Y.desktop;
@@ -18,7 +18,7 @@ image/jpeg=eog.desktop;
 application/pdf=evince.desktop;
 application/vnd.snap=org.gnome.FileRoller.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;
-application/pgp-keys=gedit.desktop;
+application/pgp-keys=gvim.desktop;
 application/x-xpinstall=org.gnome.FileRoller.desktop;
 video/mp2t=org.gnome.Totem.desktop;
 application/x-shellscript=gvim.desktop;
