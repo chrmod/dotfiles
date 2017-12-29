@@ -1,19 +1,23 @@
 [user]
-	email = chrmod@chrmod.net
-	name = Krzysztof Jan Modras
+  email = chrmod@chrmod.net
+  name = Krzysztof Jan Modras
 
 [github]
   user = chrmod
 
 [push]
-	default = current
+  default = current
+
+[pull]
+  rebase = true
 
 [commit]
   gpgsign = true
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+  autocrlf = input
+  editor = vim
+  excludesfile = ~/.gitignore
 
 [alias]
   start = !BRANCH=`git remote | grep upstream || echo origin` && echo "Fetch $BRANCH/master" && git fetch $BRANCH && git checkout $BRANCH/master --quiet && git branch -d master && git checkout -b master
