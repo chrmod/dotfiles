@@ -120,10 +120,10 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec sudo /home/chrmod/bin/brightness + 100 # increase screen brightness
-bindsym XF86MonBrightnessDown exec sudo /home/chrmod/bin/brightness - 100 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec sudo ~/bin/brightness + 100 # increase screen brightness
+bindsym XF86MonBrightnessDown exec sudo ~/bin/brightness - 100 # decrease screen brightness
 
-bindsym XF86Display exec /home/chrmod/bin/display_p.sh
+bindsym XF86Display exec ~/bin/display_p.sh
 
 # Keyboard backlit
 bindsym XF86KbdBrightnessDown exec sudo ~/bin/asus_kbd_backlight down
@@ -155,7 +155,7 @@ new_window pixel 0
 bar {
         i3bar_command i3bar -t
         position bottom
-        status_command SCRIPT_DIR=$HOME/.i3/scripts i3blocks -c ~/.i3/i3blocks.conf
+        status_command SCRIPT_DIR=$HOME/.config/i3/scripts i3blocks -c ~/.config/i3/i3blocks.conf
         separator_symbol " | "
         colors {
             background $bg-colorCC
@@ -198,7 +198,7 @@ mode "resize" {
 exec --no-startup-id nm-applet
 # composition manager - for transparency and smooth rendering
 exec --no-startup-id compton -b
-exec --no-startup-id /home/chrmod/bin/wallpaper.sh
+exec --no-startup-id ~/bin/wallpaper.sh
 # turn off keystroke repeating
 exec --no-startup-id xset r off
 # switch keyboard layout
@@ -208,7 +208,7 @@ exec --no-startup-id start-pulseaudio-x11
 # touchpad
 exec --no-startup-id libinput-gestures-setup autostart
 # keyboard configuration
-exec --no-startup-id xmodmap /home/chrmod/.Xmodmap
+exec --no-startup-id xmodmap ~/.Xmodmap
 # start terminal deamon
 exec --no-startup-id urxvtd -q -o -f
 # screensaver
