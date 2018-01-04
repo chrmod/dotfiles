@@ -10,7 +10,7 @@ pager =
 histedit =
 rebase =
 blackbox =
-shelve=
+shelve =
 firefoxtree = /home/chrmod/.mozbuild/version-control-tools/hgext/firefoxtree
 reviewboard = /home/chrmod/.mozbuild/version-control-tools/hgext/reviewboard/client.py
 bzexport = /home/chrmod/.mozbuild/version-control-tools/hgext/bzexport
@@ -44,7 +44,8 @@ graphshorten = true
 ircnick = chrmod
 [paths]
 review = ssh://reviewboard-hg.mozilla.org/autoreview
-[hostfingerprints]
-bugzilla.mozilla.org = f9:7e:62:42:4e:38:79:96:ca:87:71:2a:f8:51:38:c8:16:92:5c:a7
-bitbucket.org = 46:de:34:e7:9b:18:cd:7f:ae:fd:8b:e3:bc:f4:1a:5e:38:d7:ac:24
-hg.mozilla.org = af:27:b9:34:47:4e:e5:98:01:f6:83:2b:51:c9:aa:d8:df:fb:1a:27
+try = ssh://hg.mozilla.org/try
+[hostsecurity]
+bitbucket.org:fingerprints = sha256:4e:65:3e:76:0f:81:59:85:5b:50:06:0c:c2:4d:3c:56:53:8b:83:3e:9b:fa:55:26:98:9a:ca:e2:25:03:92:47
+bugzilla.mozilla.org:fingerprints = sha256:95:BA:0F:F2:C4:28:75:9D:B5:DB:4A:50:5F:29:46:A3:A9:4E:1B:56:A5:AE:10:50:C3:DD:3A:AC:73:BF:4A:D9
+hg.mozilla.org:fingerprints = sha256:8e:ad:f7:6a:eb:44:06:15:ed:f3:e4:69:a6:64:60:37:2d:ff:98:88:37:bf:d7:b8:40:84:01:48:9c:26:ce:d9
