@@ -20,6 +20,7 @@ source $HOME/.config/bash/android.sh
 source $HOME/.config/bash/history.sh
 source $HOME/.config/bash/nix.sh
 source $HOME/.config/bash/transfer.sh
+source $HOME/.config/bash/linuxbrew.sh
 
 # detect interactive shell
 case $- in *i*)
