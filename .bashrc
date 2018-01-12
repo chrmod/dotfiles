@@ -21,6 +21,7 @@ source $HOME/.config/bash/history.sh
 source $HOME/.config/bash/nix.sh
 source $HOME/.config/bash/transfer.sh
 source $HOME/.config/bash/linuxbrew.sh
+source $HOME/.config/bash/fzf.sh
 
 # detect interactive shell
 case $- in *i*)
