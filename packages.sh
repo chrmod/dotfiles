@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# color picker
+# https://kryogenix.org/code/pick/
+
 packages=(
   i3-wm
   kpcli
