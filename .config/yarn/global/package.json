@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "ember-cli": "^2.14.0",
-    "typescript": "^2.5.3",
-    "webpack": "^3.8.1"
+    "broccoli-cli": "^1.0.0",
+    "ember-cli": "^2.18.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
   }
 }
