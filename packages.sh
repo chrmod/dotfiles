@@ -5,6 +5,7 @@
 
 packages=(
   i3-wm
+  dex
   kpcli
   neovim
   pavucontrol # audio controls
