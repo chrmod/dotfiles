@@ -196,7 +196,7 @@ mode "resize" {
 
 # Startup
 # network manager
-exec --no-startup-id nm-applet
+exec --no-startup-id dex ~/.config/autostart/nm-applet.desktop
 # composition manager - for transparency and smooth rendering
 exec --no-startup-id compton -b
 exec --no-startup-id ~/bin/wallpaper.sh
@@ -213,7 +213,7 @@ exec --no-startup-id xmodmap ~/.Xmodmap
 # start terminal deamon
 exec --no-startup-id urxvtd -q -o -f
 # screensaver
-exec --no-startup-id xscreensaver -no-splash
+exec --no-startup-id dex ~/.config/autostart/screensaver.desktop
 # screen locker
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
 # dropbox
