@@ -198,7 +198,7 @@ mode "resize" {
 # network manager
 exec --no-startup-id dex ~/.config/autostart/nm-applet.desktop
 # composition manager - for transparency and smooth rendering
-exec --no-startup-id compton -b
+exec --no-startup-id dex ~/.config/autostart/compton.desktop
 exec --no-startup-id ~/bin/wallpaper.sh
 # turn off keystroke repeating
 exec --no-startup-id xset r off
