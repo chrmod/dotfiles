@@ -205,7 +205,7 @@ exec --no-startup-id xset r off
 # switch keyboard layout
 exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
 # start sound deamon
-exec --no-startup-id start-pulseaudio-x11
+exec --no-startup-id dex ~/.config/autostart/pulseaudio.desktop
 # touchpad
 exec --no-startup-id libinput-gestures-setup autostart
 # keyboard configuration
