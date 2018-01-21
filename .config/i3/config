@@ -195,19 +195,11 @@ mode "resize" {
 
 
 # Startup
-# network manager
-exec --no-startup-id dex ~/.config/autostart/nm-applet.desktop
-# composition manager - for transparency and smooth rendering
-exec --no-startup-id dex ~/.config/autostart/compton.desktop
 exec --no-startup-id ~/bin/wallpaper.sh
 # turn off keystroke repeating
 exec --no-startup-id xset r off
 # switch keyboard layout
 exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
-# start sound deamon
-exec --no-startup-id dex ~/.config/autostart/pulseaudio.desktop
-# touchpad
-exec --no-startup-id dex ~/.config/autostart/libinput-gestures.desktop
 # keyboard configuration
 exec --no-startup-id xmodmap ~/.Xmodmap
 # start terminal deamon
@@ -216,7 +208,7 @@ exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id dex ~/.config/autostart/screensaver.desktop
 # screen locker
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
-# dropbox
-exec --no-startup-id dex ~/.config/autostart/dropbox.desktop
+
+exec --no-startup-id dex -a -s ~/.config/autostart
 
 gaps inner 5
