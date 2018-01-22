@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Rxvt Unicode Daemon
+Icon=terminal
+Exec=urxvtd -q -o -f
+StartupNotify=true
+Categories=Terminal;

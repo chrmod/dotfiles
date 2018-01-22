@@ -202,13 +202,11 @@ exec --no-startup-id xset r off
 exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
 # keyboard configuration
 exec --no-startup-id xmodmap ~/.Xmodmap
-# start terminal deamon
-exec --no-startup-id urxvtd -q -o -f
 # screensaver
 exec --no-startup-id dex ~/.config/autostart/screensaver.desktop
 # screen locker
 exec --no-startup-id xss-lock -- xscreensaver-command -lock
-
+# loading ~/.config/autostart
 exec --no-startup-id dex -a -s ~/.config/autostart
 
 gaps inner 5
