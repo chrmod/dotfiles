@@ -8,3 +8,4 @@
 .netrwhist
 bin/packer
 .config/systemd/user/default.target.wants
+.config/nvim/spell
