@@ -3,6 +3,8 @@
     "broccoli-cli": "^1.0.0",
     "ember-cli": "^2.18.0",
     "exp": "^48.0.2",
+    "ngrok": "^2.2.25",
+    "testem": "^1.18.4",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0"
   }
