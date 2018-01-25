@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Screen Lock
+Type=Application
+Exec=xss-lock -- xscreensaver-command -lock
