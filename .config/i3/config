@@ -200,8 +200,7 @@ exec --no-startup-id ~/bin/wallpaper.sh
 exec --no-startup-id xset r off
 # switch keyboard layout
 exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
-# keyboard configuration
-exec --no-startup-id xmodmap ~/.Xmodmap
+
 # loading ~/.config/autostart
 exec --no-startup-id dex -a -s ~/.config/autostart
 
