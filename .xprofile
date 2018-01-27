@@ -1,2 +1,6 @@
-
-xmodmap $HOME/.Xmodmap
+# turn off keystroke repeating
+xset r off
+# switch keyboard layout
+setxkbmap -option 'grp:menu_toggle'
+# setup function keys
+sleep 20; xmodmap $HOME/.Xmodmap

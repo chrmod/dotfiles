@@ -196,10 +196,6 @@ mode "resize" {
 
 # Startup
 exec --no-startup-id ~/bin/wallpaper.sh
-# turn off keystroke repeating
-exec --no-startup-id xset r off
-# switch keyboard layout
-exec --no-startup-id setxkbmap -option 'grp:menu_toggle'
 
 # loading ~/.config/autostart
 exec --no-startup-id dex -a -s ~/.config/autostart
