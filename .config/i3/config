@@ -193,11 +193,9 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-
-# Startup
-exec --no-startup-id ~/bin/wallpaper.sh
-
 # loading ~/.config/autostart
 exec --no-startup-id dex -a -s ~/.config/autostart
+
+# X specific startup is handled by $HOME/.xprofile
 
 gaps inner 5

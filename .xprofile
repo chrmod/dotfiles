@@ -4,3 +4,5 @@ xset r off
 setxkbmap -option 'grp:menu_toggle'
 # setup function keys
 sleep 20; xmodmap $HOME/.Xmodmap
+# Startup
+exec --no-startup-id ~/bin/wallpaper.sh
