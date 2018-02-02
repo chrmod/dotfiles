@@ -7,11 +7,11 @@ packages=(
   i3-wm
   dex
   kpcli
+  hsetroot
   neovim
   pavucontrol # audio controls
   rofi
   tmux
-  tmuxp
   xscreensaver
   xss-lock
 )
