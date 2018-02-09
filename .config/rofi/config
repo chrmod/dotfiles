@@ -6,12 +6,10 @@ rofi.color-urgent: argb:cc3c3836, argb:ffdc322f, argb:cc3c3836, argb:ffdc322f, a
 rofi.color-window: argb:cc3c3836, argb:cc3c3836, argb:ff3c3836
 rofi.eh: 1
 rofi.font: System San Francisco Display 18
-rofi.lines: 3
-rofi.padding: 480
+rofi.fullscreen: true
+rofi.padding: 400
 rofi.separator-style: none
 rofi.hide-scrollbar: true
-rofi.width: 100
-rofi.height: 100
 rofi.matching: fuzzy
 rofi.line-margin: 5
 rofi.line-padding: 5
