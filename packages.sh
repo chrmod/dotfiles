@@ -4,6 +4,7 @@
 # https://kryogenix.org/code/pick/
 
 packages=(
+  awscli
   i3-wm
   dex
   kpcli
