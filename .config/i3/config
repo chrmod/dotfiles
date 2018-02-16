@@ -44,8 +44,8 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal -e 'tmuxa'
-bindsym $mod+backslash exec i3-sensible-terminal -e 'tmux'
+bindsym $mod+Return exec alacritty -e 'tmuxa'
+bindsym $mod+backslash exec alacritty -e 'tmux'
 
 # start launcher
 bindsym $mod+d exec rofi -show run
