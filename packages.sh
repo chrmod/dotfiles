@@ -12,6 +12,7 @@ packages=(
   neovim
   pavucontrol # audio controls
   rofi
+  shutter
   tmux
   xscreensaver
   xss-lock
