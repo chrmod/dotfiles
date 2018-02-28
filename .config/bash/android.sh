@@ -4,7 +4,10 @@ if [ -d "$HOME/Android/android-studio/bin" ] ; then
 fi
 
 if [ -d "$HOME/Android/Sdk" ] ; then
-    export PATH="$HOME/Android/Sdk/emulator/:$HOME/Android/Sdk/platform-tools:$PATH"
+    export PATH="$HOME/Android/Sdk/emulator/:$PATH"
+    export PATH=":$HOME/Android/Sdk/platform-tools:$PATH"
+    export PATH=":$HOME/Android/Sdk/tools:$PATH"
+    export PATH=":$HOME/Android/Sdk/tools/bin:$PATH"
     export ANDROID_HOME="$HOME/Android/Sdk"
 fi
 
