@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Avoid duplicates
-HISTCONTROL=ignoreboth:erasedups
-HISTSIZE=
-HISTFILESIZE=
+export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=
+export HISTFILESIZE=
 
 # When the shell exits, append to the history file instead of overwriting it
 shopt -s histappend
