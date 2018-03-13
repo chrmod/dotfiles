@@ -5,12 +5,14 @@
     "detox-cli": "^7.0.0",
     "ember-cli": "^2.18.1",
     "eslint": "^4.17.0",
-    "exp": "^48.0.2",
+    "exp": "^49.2.2",
     "ngrok": "^2.2.25",
+    "react-devtools": "^3.1.0",
     "react-native-cli": "^2.0.1",
     "testem": "^1.18.4",
     "typescript": "^2.6.2",
-    "web-ext": "^2.3.2",
-    "webpack": "^3.10.0"
+    "web-ext": "^2.4.0",
+    "webpack": "^3.10.0",
+    "yuidocjs": "^0.10.2"
   }
 }
