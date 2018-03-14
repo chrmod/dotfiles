@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-tmux attach -f /home/chrmod/.config/tmux/tmux.conf || tmux -f /home/chrmod/.config/tmux/tmux.conf new
+#!/bin/bash -l
+tmux attach || tmux -f /home/chrmod/.config/tmux/tmux.conf new
