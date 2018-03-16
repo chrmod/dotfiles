@@ -15,6 +15,7 @@ packages=(
   shutter
   tmux
   xscreensaver
+  xscreensaver-screensaver-bsod
   xss-lock
 )
 
