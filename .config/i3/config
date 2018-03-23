@@ -13,7 +13,7 @@ set $urgent-bg-color     #cc241d
 
 # assign programs to wrkspace
 assign [class="Firefox"] $workspace1
-assign [class="Keepassx"] 8
+assign [class="Bitwarden"] 8
 assign [class="Slack"] $workspace9
 assign [class="Skype"] $workspace9
 assign [class="spotify"] $workspace10
