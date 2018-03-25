@@ -3,6 +3,6 @@ xset r off
 # switch keyboard layout
 setxkbmap -option 'grp:menu_toggle'
 # setup function keys
-sleep 20; xmodmap $HOME/.Xmodmap
+# sleep 20; xmodmap $HOME/.Xmodmap
 
 ~/bin/wallpaper.sh
