@@ -5,10 +5,11 @@
 
 packages=(
   awscli
-  i3-wm
   dex
-  kpcli
   hsetroot
+  httpie
+  i3-wm
+  kpcli
   neovim
   pavucontrol # audio controls
   rofi
