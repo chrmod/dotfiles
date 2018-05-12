@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh
+source /home/linuxbrew/.linuxbrew/share/chruby/auto.sh
