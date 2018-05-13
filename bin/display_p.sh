@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-PRIMARY=eDP1
-SECONDARY=DP1
-xrandr --output $PRIMARY --mode 1920x1080 --primary --output $SECONDARY --off
+PRIMARY=eDP-1
+SECONDARY=DP-1-1
+xrandr --output $PRIMARY --mode 2560x1440 --primary --output $SECONDARY --off
 /home/chrmod/bin/wallpaper.sh
