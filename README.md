@@ -1,8 +1,8 @@
 # dotfiles
 
-hardware: Asus Zenbook 3 (UX390UA)
+hardware: Lenovo X1 Yoga 3rd gen
 
-OS: Ubuntu 17.10
+OS: Ubuntu 18.04
 
 software:
 * i3
