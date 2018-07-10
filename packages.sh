@@ -28,33 +28,34 @@
 
 packages=(
   awscli
-  dex
-  hsetroot
-  thunar
-  httpie
   cmdtest
-  kpcli
-  htop
-  neovim
-  i3status
   compton
-  libinput-tools
-  shutter
-  git
   curl
+  dex
+  git
+  hsetroot
+  htop
+  httpie
+  i3status
+  imapfilter
+  isync
+  jq
+  kpcli
+  libinput-tools
+  mutt
+  neovim
+  net-tools
+  openssh-server
   pavucontrol # audio controls
   rofi
   shutter
+  shutter
+  thunar
   tmux
-  net-tools
-  openssh-server
+  ubuntu-restricted-extras
   xscreensaver
   xscreensaver-screensaver-bsod
-  ubuntu-restricted-extras
-  imapfilter
   xss-lock
-  mutt
-  isync
 )
 
 sudo apt-get install ${packages[@]}
