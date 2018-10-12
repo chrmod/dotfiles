@@ -59,7 +59,7 @@ mailboxes +Work/Work +Work/Work.Archive +Work/Work.Sent +Work/Work.Drafts +Work/
 push <first-entry> # starts with first message selected, not first unread
 
 set alias_file = ~/.config/mutt/addresses
-set crypt_autosign
+#set crypt_autosign
 set crypt_autosmime = no
 set editor = 'vim "+set filetype=mail" +/^$'
 set folder = ~/Mail

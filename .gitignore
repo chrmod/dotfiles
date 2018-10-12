@@ -6,6 +6,16 @@
 .vim/plugged
 .vim/spell/en.utf-8.add.spl
 .netrwhist
-bin/packer
 .config/systemd/user/default.target.wants
 .config/nvim/spell
+
+bin/packer
+bin/Bitwarden
+bin/alacritty
+bin/aws-vault
+bin/firefox
+bin/terraform
+
+.config/mutt/password*
+.config/mutt/addresses
+.config/yarn/global/node_modules/

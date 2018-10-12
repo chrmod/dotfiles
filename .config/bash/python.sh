@@ -11,5 +11,5 @@ complete -o default -F _pip_completion pip
 
 export WORKON_HOME=/home/chrmod/.virtualenvs
 
-[[ -s /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
+[[ -s /home/linuxbrew/.linuxbrew/bin/virtualenvwrapper.sh ]] && source /home/linuxbrew/.linuxbrew/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=/home/chrmod/.virtualenvs

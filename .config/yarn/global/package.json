@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "bower": "^1.8.2",
-    "broccoli-cli": "^1.0.0",
     "detox-cli": "^7.0.0",
     "ember-cli": "^2.18.1",
     "eslint": "^4.17.0",
     "exp": "^49.2.2",
     "ngrok": "^2.2.25",
+    "raureif": "^2.0.2",
     "react-devtools": "^3.1.0",
     "react-native-cli": "^2.0.1",
     "testem": "^1.18.4",
