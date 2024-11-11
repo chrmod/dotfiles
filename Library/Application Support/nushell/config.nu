@@ -653,6 +653,10 @@ $env.config = {
     ]
 }
 
+use `/Users/chrmod/Library/Application Support/nushell/custom_completions/git/git-completions.nu` *
+use `/Users/chrmod/Library/Application Support/nushell/custom_completions/rg/rg-completions.nu` *
+use `/Users/chrmod/Library/Application Support/nushell/custom_completions/docker/docker-completions.nu` *
+use `/Users/chrmod/Library/Application Support/nushell/custom_completions/npm/npm-completions.nu` *
 use ~/.cache/starship/init.nu
 
 alias vi = nvim
