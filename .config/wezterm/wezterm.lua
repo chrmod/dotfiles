@@ -17,7 +17,7 @@ config.window_padding = {
   bottom = 10,
 }
 
-config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 2000 }
+config.leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 2000 }
 wezterm.on('update-right-status', function(window)
   local leader = ''
   if window:leader_is_active() then
