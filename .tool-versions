@@ -2,3 +2,4 @@ python 3.9.13
 awscli 2.2.39
 nodejs 20.10.0
 deno 2.0.3
+ruby 3.2.5

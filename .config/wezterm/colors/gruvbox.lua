@@ -33,13 +33,13 @@ local palette = {
 }
 
 local active_tab = {
-    bg_color = palette.overlay,
-    fg_color = palette.text,
+    bg_color = palette.base,
+    fg_color = palette.gold,
 }
 
 local inactive_tab = {
-    bg_color = palette.base,
-    fg_color = palette.muted,
+    bg_color = palette.overlay,
+    fg_color = palette.pine,
 }
 
 local color = {
